@@ -16,6 +16,13 @@ body {
   border-radius: 0;
 }
 
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
