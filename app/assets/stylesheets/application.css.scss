@@ -14,13 +14,16 @@ body {
 
 .navbar {
   border-radius: 0;
+//  min-height:80px; 
+//  height: 80px;
 }
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 100px;
-    height: 100px;
-    padding-top: 0;
+//    line-height: 80px;
+//    height: 80px;
+ //   padding-top: 0;
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .nav-tabs > li, .nav-pills > li {
@@ -28,6 +31,7 @@ body {
     display:inline-block;
     *display:inline; /* ie7 fix */
      zoom:1; /* hasLayout ie7 trigger */
+     font-size: 16px
 }
 
 .nav-tabs, .nav-pills {
@@ -36,7 +40,14 @@ body {
 
 .btn-sharp {
   border-radius:0;
+  font-family: 'Orbitron', sans-serif;
 }
+
+.no-gutter {
+    padding-right:0;
+    padding-left:0;
+}
+
 
 h1 {
   font-family: 'Orbitron', sans-serif;
