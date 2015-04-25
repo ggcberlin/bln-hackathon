@@ -9,4 +9,3 @@ gem 'bootstrap-sass'
 
 
 gem 'jbuilder', '~> 2.0'
-

@@ -16,16 +16,34 @@ body {
   border-radius: 0;
 }
 
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+
+.btn-sharp {
+  border-radius:0;
+}
+
 h1 {
-  font-family: 'Orbitron', sans-serif;	
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
 }
 
 h2 {
   font-family: 'Orbitron', sans-serif;	
+  font-size: 24px;
 }
 
 h3 {
   font-family: 'Orbitron', sans-serif;
+  font-size: 18x;
 }
 
 h4 {

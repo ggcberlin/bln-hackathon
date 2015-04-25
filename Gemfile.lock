@@ -130,4 +130,5 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)
+  rake (= 10.4.2)
   sass-rails
