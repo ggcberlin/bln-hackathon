@@ -12,21 +12,24 @@ body {
   text-align: center;
 }
 
-.navbar {
-  border-radius: 0;
-//  min-height:80px; 
-//  height: 80px;
+// navigation
+.navbar-custom {
+    color:#ffffff;
+    border-radius:0;    
+    background-color:#FFFFFF;
 }
 
-.navbar-brand,
-.navbar-nav li a {
-//    line-height: 80px;
-//    height: 80px;
- //   padding-top: 0;
-    font-family: 'Orbitron', sans-serif; 
+.navbar-custom .navbar-nav > li > a {
+    color:#4D4D4D;
+    font-family: 'Orbitron', sans-serif;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #FD775B;
+    background-color: #FD775B;
 }
 
-.nav-tabs > li, .nav-pills > li {
+// tabs
+.nav-tabs > li {
     float:none;
     display:inline-block;
     *display:inline; /* ie7 fix */
@@ -34,20 +37,44 @@ body {
      font-size: 16px
 }
 
-.nav-tabs, .nav-pills {
-    text-align:center;
+
+
+.nav-pills {
+	font-family: 'Orbitron', sans-serif; 
+	text-align:center;
+}
+
+.nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+     font-size: 16px;
+     background: #4D4D4D;
+ 	border-style: solid;
+  	font-color: #FD775B;
+}
+
+.nav-pills > li:hover, .nav-pills > li:focus, .btn-sharp:active {
+  background: #FD775B;
+  border-color: #FD775B;
+  color: #FD775B;
+  font-color: #4D4D4D;
 }
 
 .btn-sharp {
   border-radius:0;
   font-family: 'Orbitron', sans-serif;
+  background: #FD775B;
+  border-style: solid;
+  border-color: #4D4D4D;
 }
 
-.no-gutter {
-    padding-right:0;
-    padding-left:0;
+.btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
+  background: #4D4D4D;
+  border-color: #FD775B;
+  color: #FD775B;
 }
-
 
 h1 {
   font-family: 'Orbitron', sans-serif;

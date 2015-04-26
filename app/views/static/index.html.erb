@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-custom">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -25,11 +25,15 @@
   </div>
 </nav>
 
-<div class="container" style="background-color:#4D4D4D;color:#FD775B ">
+<div class="container-fluid" style="background-color:#4D4D4D;color:#FD775B ">
   <%= image_tag "hack_like_a_Girl_final.svg" %>
   <h1>Hackathon: Diversity in tech</h1>
+
   <h1>13 - 14 June 2015</h1>
-  <p><a class="btn btn-default btn-lg btn-sharp" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER NOW</a></p>
+
+  <p>
+    <a class="btn btn-default btn-lg btn-sharp" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER
+      NOW</a></p>
   <span class="fa-stack fa-lg">
     <i class="fa fa-circle-o fa-stack-2x"></i>
     <i class="fa fa-facebook-f fa-stack-1x"></i>
@@ -45,56 +49,74 @@
 </div>
 
 <a name="event"></a>
-<div class="container" style="background-color:#FD775B;color:white">
+<div class="container-fluid" style="background-color:#FD775B;color:white">
   <h1>EVENT</h1>
+
   <div class="row">
     <div class="col-sm-4">
       <h2>Mission</h2>
-      <p>We welcome women of all experience levels from a variety of technical, business and creative disciplines to participate in a tech-centric project in an inclusive and safe space. We encourage collaboration, learning and building networks in order to strengthen women in IT.</p>
+
+      <p>We welcome women of all experience levels from a variety of technical, business and creative disciplines to
+        participate in a tech-centric project in an inclusive and safe space. We encourage collaboration, learning and
+        building networks in order to strengthen women in IT.</p>
     </div>
     <div class="col-sm-4">
       <h2>Topic</h2>
-      <p>The theme for the hackathon is “diversity in tech”. We will be building open source projects which will help women discover more about the tech industry and opportunities it offers. We are keeping the guidelines fairly open as we want to encourage participant to come up with their own creative solutions to this problem. registrations are open to idea masterminds, developers, designers and marketers.
+
+      <p>The theme for the hackathon is “diversity in tech”. We will be building open source projects which will help
+        women discover more about the tech industry and opportunities it offers. We are keeping the guidelines fairly
+        open as we want to encourage participant to come up with their own creative solutions to this problem.
+        registrations are open to idea masterminds, developers, designers and marketers.
       </p>
     </div>
     <div class="col-sm-4">
       <h2>Application Process</h2>
-      <p>As we want to have a good balance of junior and experience participants as well as different areas of expertise … </p>
+
+      <p>As we want to have a good balance of junior and experience participants as well as different areas of expertise
+        … </p>
+    </div>
   </div>
-  </div>
-  
-  <p><a class="btn btn-default btn-lg btn-sharp" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER NOW</a><p/>
+
+  <p>
+    <a class="btn btn-default btn-lg btn-sharp" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER
+      NOW</a>
+
+  <p/>
 </div>
 
 <a name="schedule"></a>
-<div class="container">
+<div class="container-fluid">
   <h1>SCHEDULE</h1>
+
   <p></p>
 </div>
 
 <a name="location"></a>
-<div class="container" style="background-color:#FD775B;color:white">
+<div class="container-fluid" style="background-color:#FD775B;color:white">
   <h1>LOCATION</h1>
+
   <h3>HERE, Invalidenstr. 116, 10115 Berlin</h3>
+
   <div id="map-canvas" style="height: 500px"></div>
 </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+    function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(52.530935, 13.384933),
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+            center: new google.maps.LatLng(52.530935, 13.384933),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 <a name="team"></a>
-<div class="container" style="background-color:#4D4D4D;color:#FD775B">
+<div class="container-fluid" style="background-color:#4D4D4D;color:#FD775B">
   <h1>TEAM</h1>
 
   <ul class="nav nav-pills">
@@ -103,11 +125,11 @@
     <li><a href="#organizers" data-toggle="tab">Organizers</a></li>
   </ul>
 
-<!-- Tab panes -->
+  <!-- Tab panes -->
   <div class="tab-content">
     <div class="tab-pane fade in active" id="judges">
-      
-      <%= image_tag "Ronny-Rentner.jpg", size: "300" %>
+
+      <%= image_tag "Ronny-Rentner.jpg", size: "300", class: "img-circle" %>
       <h3>Ronny Renter</h3>
     </div>
     <div class="tab-pane fade" id="mentors">
@@ -120,17 +142,18 @@
 </div>
 
 <a name="sponsors"></a>
-<div class="container" style="background-color:#EEEEEE;color:#4D4D4D">
+<div class="container-fluid" style="background-color:#EEEEEE;color:#4D4D4D">
   <h1>SPONSORS & PARTNERS</h1>
 </div>
 
 <a name="faq"></a>
-<div class="container" style="color:#4D4D4D">
+<div class="container-fluid" style="color:#4D4D4D">
   <h1>FAQ</h1>
 </div>
 
-<div class="container" style="background-color:#4D4D4D;color:#FD775B">
+<div class="container-fluid" style="background-color:#4D4D4D;color:#FD775B">
   <h1>CONTACT US</h1>
+
   <p><a class="btn btn-default btn-lg btn-sharp" href="" role="button">Send a message</a></p>
   <span class="fa-stack fa-lg">
     <i class="fa fa-circle-o fa-stack-2x"></i>
@@ -147,7 +170,7 @@
 </div>
 
 <div class='footer'>
-  <div class='container' style="background-color:#FD775B;color:#4D4D4D">
+  <div class='container-fluid' style="background-color:#FD775B;color:#4D4D4D">
     <h3>Copiright © Geek Girls Carrots 2015</h3>
   </div>
 </div>
