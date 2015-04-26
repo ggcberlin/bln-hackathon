@@ -2,9 +2,7 @@
  *= require_self
  *= require_tree .
  */
-
 //$navbar-inverse-link-color: #ffffff;
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -14,56 +12,60 @@ body {
 
 // navigation
 .navbar-custom {
-    color:#ffffff;
-    border-radius:0;    
-    background-color:#FFFFFF;
+  color: #ffffff;
+  border-radius: 0;
+  background-color: #FFFFFF;
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color:#4D4D4D;
-    font-family: 'Orbitron', sans-serif;
+  color: #4D4D4D;
+  font-family: 'Orbitron', sans-serif;
 }
+
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #FD775B;
-    background-color: #FD775B;
+  color: #FD775B;
+  background-color: #FD775B;
+}
+
+.nav-tabs > li {
+  float: none;
+  display: inline-block;
+  *display: inline; /* ie7 fix */
+  zoom: 1; /* hasLayout ie7 trigger */
+  font-size: 16px
 }
 
 // tabs
-.nav-tabs > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
-     font-size: 16px
-}
-
-
-
-.nav-pills {
-	font-family: 'Orbitron', sans-serif; 
-	text-align:center;
-}
-
 .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
-     font-size: 16px;
-     background: #4D4D4D;
- 	border-style: solid;
-  	font-color: #FD775B;
-}
-
-.nav-pills > li:hover, .nav-pills > li:focus, .btn-sharp:active {
-  background: #FD775B;
-  border-color: #FD775B;
+  float: none;
+  display: inline-block;
+  *display: inline; /* ie7 fix */
+  zoom: 1; /* hasLayout ie7 trigger */
+  border-radius: 0 !important;
+  font-size: 16px;
+  background: #4D4D4D;
   color: #FD775B;
-  font-color: #4D4D4D;
+  font-family: 'Orbitron', sans-serif;
 }
 
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  border-radius: 0 !important;
+  background: #FD775B;
+  color: #4D4D4D;
+}
+
+.nav-pills > li > a:hover {
+  border-radius: 0 !important;
+  background: #4D4D4D;
+  color: #FD775B;
+}
+a {
+  color: #FD775B;
+}
+
+// button
 .btn-sharp {
-  border-radius:0;
+  border-radius: 0;
   font-family: 'Orbitron', sans-serif;
   background: #FD775B;
   border-style: solid;
@@ -82,7 +84,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;	
+  font-family: 'Orbitron', sans-serif;
   font-size: 24px;
 }
 
