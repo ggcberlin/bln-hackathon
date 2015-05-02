@@ -82,19 +82,79 @@ a {
 
 h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 32px;
+  font-size: 48px;
+  padding-bottom: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h1.no-padding-bottom, div.no-padding-bottom {
+  padding-bottom: 0px;
 }
 
 h2 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h1.middle-padding-bottom, h2.middle-padding-bottom, p.middle-padding-bottom {
+  padding-bottom: 48px;
+}
+
+h2.padding-top {
+  padding-top: 80px;
+}
+
+h2.padding-top-bottom {
+  padding-bottom: 80px;
+}
+
+h2.name {
+  color :#ffffff;
+  text-align: left;
 }
 
 h3 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 18x;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-h4 {
-  font-family: 'Orbitron', sans-serif;
+p {
+  font-family: 'SansPro', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p.no-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p.bio {
+  color:#ffffff;
+  text-align: left;
+  padding-bottom: 40px
+}
+
+div.padding-top-bottom {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+div.padding-top {
+  padding-top: 100px;
+}
+
+div.no-left-right-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+ul.padding-bottom {
+  padding-bottom: 60px;
 }

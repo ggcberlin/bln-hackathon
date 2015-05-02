@@ -25,15 +25,18 @@
   </div>
 </nav>
 
-<div class="container-fluid" style="background-color:#4D4D4D;color:#FD775B ">
+<div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B ">
+
   <%= image_tag "hack_like_a_Girl_final.svg" %>
-  <h1>Hackathon: Diversity in tech</h1>
 
-  <h1>13 - 14 June 2015</h1>
+  <h2 class="padding-top middle-padding-bottom">Hackathon: Diversity in tech</h2>
 
-  <p>
+  <h1 class="no-padding-bottom middle-padding-bottom">13 - 14 June 2015</h1>
+
+  <p class="middle-padding-bottom no-margin">
     <a class="btn btn-default btn-lg btn-sharp" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER
-      NOW</a></p>
+      NOW</a>
+  </p>
   <span class="fa-stack fa-lg">
     <i class="fa fa-circle-o fa-stack-2x"></i>
     <i class="fa fa-facebook-f fa-stack-1x"></i>
@@ -49,7 +52,7 @@
 </div>
 
 <a name="event"></a>
-<div class="container-fluid" style="background-color:#FD775B;color:white">
+<div class="container-fluid padding-top-bottom" style="background-color:#FD775B;color:white">
   <h1>EVENT</h1>
 
   <div class="row">
@@ -70,7 +73,7 @@
       </p>
     </div>
     <div class="col-sm-4">
-      <h2>Application Process</h2>
+      <h2>Application process</h2>
 
       <p>As we want to have a good balance of junior and experience participants as well as different areas of expertise
         … </p>
@@ -80,19 +83,19 @@
 </div>
 
 <a name="schedule"></a>
-<div class="container-fluid">
+<div class="container-fluid padding-top-bottom">
   <h1>SCHEDULE</h1>
 
   <p></p>
 </div>
 
 <a name="location"></a>
-<div class="container-fluid" style="background-color:#FD775B;color:white">
-  <h1>LOCATION</h1>
+<div class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
+  <h1 class="no-padding-bottom">LOCATION</h1>
 
-  <h3>HERE, Invalidenstr. 116, 10115 Berlin</h3>
+  <h2 class="padding-top-bottom">HERE, Invalidenstr. 116, 10115 Berlin</h2>
 
-  <div id="map-canvas" style="height: 500px"></div>
+  <div id="map-canvas" style="height: 500px" class="no-left-right-margin"></div>
 </div>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -111,13 +114,13 @@
 </script>
 
 <a name="team"></a>
-<div class="container-fluid" style="background-color:#4D4D4D;color:#FD775B">
+<div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
   <h1>TEAM</h1>
 
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#judges" data-toggle="tab">Judges</a></li>
-    <li><a href="#mentors" data-toggle="tab">Mentors</a></li>
-    <li><a href="#organizers" data-toggle="tab">Organizers</a></li>
+  <ul class="nav nav-pills padding-bottom">
+    <li class="active"><a href="#judges" data-toggle="tab">JUDJES</a></li>
+    <li><a href="#mentors" data-toggle="tab">MENTORS</a></li>
+    <li><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -125,12 +128,12 @@
     <div class="tab-pane fade in active" id="judges">
       <div class="row">
         <div class="col-sm-4">
-          <%= image_tag "Ronny-Rentner.jpg", size: "250", class: "img-circle" %>
+          <%= image_tag "Ronny-Rentner.jpg", size: "300", class: "img-circle" %>
         </div>
         <div class="col-sm-8">
-          <h3>Ronny Renter</h3>
+          <h2 class="name">Ronny Renter</h2>
 
-          <p style="color:#ffffff;text-align: left">Ronny was working for more than 12 years in the area of web
+          <p class="bio">Ronny was working for more than 12 years in the area of web
             development and eCommerce. As a software
             engineer and consultant he was involved in large scale CMS projects for companies like Bayer Schering Pharma
             and Gruner + Jahr. During the last years he gained lots of experience with fast moving, agile processes by
@@ -141,12 +144,12 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <%= image_tag "lisa.jpeg", size: "250", class: "img-circle" %>
+          <%= image_tag "lisa.jpeg", size: "300", class: "img-circle" %>
         </div>
         <div class="col-sm-8">
-          <h3>Lisa Lang</h3>
+          <h2 class="name">Lisa Lang</h2>
 
-          <p style="color:#ffffff;text-align: left">With a name that sounds ripped from a Marvel comic book, Lisa Lang
+          <p class="bio">With a name that sounds ripped from a Marvel comic book, Lisa Lang
             delivers a personality to match - and she has a superpower: Lisa brings people together to create new,
             innovative, and beautiful products.
             Lisa was raised in a Franconian craftsman family, studied Arts, New Media as well as international business
@@ -168,19 +171,48 @@
 </div>
 
 <a name="sponsors"></a>
-<div class="container-fluid" style="background-color:#EEEEEE;color:#4D4D4D">
+<div class="container-fluid padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
   <h1>SPONSORS & PARTNERS</h1>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+    <div class="col-sm-3">
+      <%= image_tag "zalando_logo.png", size: "250x100" %>
+    </div>
+  </div>
 </div>
 
 <a name="faq"></a>
-<div class="container-fluid" style="color:#4D4D4D">
+<div class="container-fluid padding-top-bottom" style="color:#4D4D4D">
   <h1>FAQ</h1>
 </div>
 
-<div class="container-fluid" style="background-color:#4D4D4D;color:#FD775B">
+<div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
   <h1>CONTACT US</h1>
 
-  <p><a class="btn btn-default btn-lg btn-sharp" href="" role="button">Send a message</a></p>
+  <p class="middle-padding-bottom"><a class="btn btn-default btn-lg btn-sharp" href="" role="button">Send a message</a></p>
   <span class="fa-stack fa-lg">
     <i class="fa fa-circle-o fa-stack-2x"></i>
     <i class="fa fa-facebook-f fa-stack-1x"></i>
@@ -197,6 +229,6 @@
 
 <div class='footer'>
   <div class='container-fluid' style="background-color:#FD775B;color:#4D4D4D">
-    <h3>Copiright © Geek Girls Carrots 2015</h3>
+    <h3>Copyright © Geek Girls Carrots 2015</h3>
   </div>
 </div>
