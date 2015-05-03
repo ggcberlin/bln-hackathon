@@ -8,6 +8,7 @@
 
 body {
   text-align: center;
+  padding-top: 70px;
 }
 
 // navigation
@@ -22,9 +23,14 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-  color: #FD775B;
+.navbar-custom .nav > li > a:active, .nav > .active > a:focus {
+  color: #ffffff;
   background-color: #FD775B;
+}
+
+.navbar-custom .nav > li > a:hover, .nav > li > a:focus {
+  color: #FD775B;
+  background-color: transparent;
 }
 
 .nav-tabs > li {
