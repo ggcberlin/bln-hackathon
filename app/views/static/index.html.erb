@@ -1,19 +1,19 @@
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-custom navbar-fixed-top" id="navbar-example">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar" style="color:#4D4D4D" ></span>
-        <span class="icon-bar" style="color:#4D4D4D"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
         <span class="icon-bar" style="color:#4D4D4D"></span>
       </button>
       <a class="navbar-brand" href="#"><%= image_tag "geek_girls_carrots.svg", size: "310x62" %></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right" role="navigation">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="#event" class="page-scroll">EVENT</a></li>
         <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
         <li><a href="#location" class="page-scroll">LOCATION</a></li>
@@ -34,9 +34,9 @@
     } );
 </script>
 
-<script type="text/javascript">
-    $('body').scrollspy({ target: '#navbar-example' })
-</script>
+  <!--&lt;!&ndash;<script type="text/javascript">&ndash;&gt;-->
+<!--//      $('body').scrollspy({ target: 'nav' })-->
+  <!--&lt;!&ndash;</script>&ndash;&gt;-->
 
 <div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B ">
 
@@ -47,16 +47,16 @@
   <h1 class="no-padding-bottom middle-padding-bottom">13 - 14 June 2015</h1>
 
   <p class="middle-padding-bottom no-margin">
-    <a class="btn btn-default btn-lg btn-sharp" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER
+    <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">REGISTER
       NOW</a>
   </p>
-  <a href="https://www.facebook.com/ggc.berlin?ref=hl">
+  <a href="https://www.facebook.com/ggc.berlin?ref=hl" target="_blank">
   <span class="fa-stack fa-lg">
     <i class="fa fa-stack-2x mycircle"></i>
     <i class="fa fa-facebook-f fa-stack-1x mylogo"></i>
   </span>
   </a>
-  <a href="https://twitter.com/ggCarrotsBerlin">
+  <a href="https://twitter.com/ggCarrotsBerlin" target="_blank">
   <span class="fa-stack fa-lg">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-twitter mylogo"></i>
@@ -355,11 +355,11 @@
   <h1>FAQ</h1>
 </div>
 
-<div id="contact" class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
+<div id="contact" class="container-fluid padding-top-bottom-mini" style="background-color:#4D4D4D;color:#FD775B">
   <h1>CONTACT US</h1>
 
   <p class="middle-padding-bottom">
-    <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com" role="button">Send a message</a></p>
+    <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com"  target="_blank" role="button">Send a message</a></p>
   <a href="https://www.facebook.com/ggc.berlin?ref=hl">
   <span class="fa-stack fa-lg">
     <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -375,7 +375,8 @@
 </div>
 
 <div class='footer'>
-  <div class='container-fluid' style="background-color:#FD775B;color:#4D4D4D">
+  <div class='container-fluid padding-top-bottom-mini' style="background-color:#FD775B;color:#4D4D4D">
     <h3>Copyright © Geek Girls Carrots 2015</h3>
   </div>
 </div>
+

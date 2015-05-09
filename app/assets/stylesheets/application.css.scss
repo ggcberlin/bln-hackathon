@@ -39,13 +39,6 @@ $background-color: #4D4D4D;
   }
 }
 
-
-body {
-  text-align: center;
-  padding-top: 70px;
-  position: relative;
-}
-
 a {
   color: $action-color;
 
@@ -54,40 +47,45 @@ a {
   }
 }
 
+body {
+  text-align: center;
+  padding-top: 70px;
+  position: relative;
+}
+
+html,
+body {
+  width:100%;
+  overflow-x:hidden;
+}
+
 // navigation
 .navbar-brand {
   padding: 10px 15px;
 }
 
 .navbar-custom {
-  color: #ffffff;
   border-radius: 0;
   background-color: #FFFFFF;
   //min-height: 100px;
 }
 
 .navbar-custom .navbar-nav > li > a {
-  color: #4D4D4D;
+  color: $background-color;
   font-family: 'Orbitron', sans-serif;
   vertical-align: baseline;
+  font-size: 16px;
+  //height: 30px;
 }
 
 .navbar-custom .nav > li > a:active, .nav > li > a:focus {
   color: #ffffff;
-  background-color: #FD775B;
+  background-color: $action-color;
 }
 
 .navbar-custom .nav > li > a:hover {
-  color: #FD775B;
+  color: $action-color;
   background-color: transparent;
-}
-
-.nav-tabs > li {
-  float: none;
-  display: inline-block;
-  *display: inline; /* ie7 fix */
-  zoom: 1; /* hasLayout ie7 trigger */
-  font-size: 16px
 }
 
 // tabs
@@ -100,21 +98,22 @@ a {
   border-style: solid;
   border-color: $action-color;
   font-size: 16px;
-  background: #4D4D4D;
+  background: $background-color;
   color: $action-color;
   font-family: 'Orbitron', sans-serif;
+  width: 150px;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   border-radius: 0 !important;
-  background: #FD775B;
-  color: #4D4D4D;
+  background: $action-color;
+  color: $background-color;
 }
 
 .nav-pills > li > a:hover {
   border-radius: 0 !important;
-  background: #4D4D4D;
-  color: #FD775B;
+  background: $background-color;
+  color: $action-color;
 }
 a {
   color: $action-color;
@@ -124,15 +123,15 @@ a {
 .btn-sharp {
   border-radius: 0;
   font-family: 'Orbitron', sans-serif;
-  background: #FD775B;
+  background: $action-color;
   border-style: solid;
-  border-color: #4D4D4D;
+  border-color: $background-color;
 }
 
 .btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
-  background: #4D4D4D;
-  border-color: #FD775B;
-  color: #FD775B;
+  background: $background-color;
+  border-color: $action-color;
+  color: $action-color;
 }
 
 h1 {
@@ -201,6 +200,12 @@ div.padding-top-bottom {
   padding-bottom: 100px;
 }
 
+div.padding-top-bottom-mini {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
 div.padding-top {
   padding-top: 100px;
 }
@@ -215,18 +220,18 @@ ul.padding-bottom {
 }
 
 span.highlight {
-  color: #FD775B;
+  color: $action-color;
 }
 
 p.time {
-  color: #FD775B;
+  color: $action-color;
   font-size: 18px;
   font-family: 'Orbitron', sans-serif;
   text-align: left;
 }
 
 p.timetable-item {
-  color: #4D4D4D;
+  color: $background-color;
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
   line-height: 28px;
