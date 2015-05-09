@@ -1,29 +1,42 @@
-<nav class="navbar navbar-custom navbar-fixed-top">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed color:#FD775B" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar" style="color:#4D4D4D" ></span>
+        <span class="icon-bar" style="color:#4D4D4D"></span>
+        <span class="icon-bar" style="color:#4D4D4D"></span>
       </button>
       <a class="navbar-brand" href="#"><%= image_tag "geek_girls_carrots.svg", size: "310x62" %></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#event">EVENT</a></li>
-        <li><a href="#schedule">SCHEDULE</a></li>
-        <li><a href="#location">LOCATION</a></li>
-        <li><a href="#team">TEAM</a></li>
-        <li><a href="#sponsors">SPONSORS & PARTNERS</a></li>
-        <li><a href="#faq">FAQ</a></li>
+      <ul class="nav navbar-nav navbar-right" role="navigation">
+        <li><a href="#event" class="page-scroll">EVENT</a></li>
+        <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
+        <li><a href="#location" class="page-scroll">LOCATION</a></li>
+        <li><a href="#team" class="page-scroll">TEAM</a></li>
+        <li><a href="#sponsors" class="page-scroll">SPONSORS & PARTNERS</a></li>
+        <li><a href="#faq" class="page-scroll">FAQ</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".page-scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+        } );
+    } );
+</script>
+
+<script type="text/javascript">
+    $('body').scrollspy({ target: '#navbar-example' })
+</script>
 
 <div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B ">
 
@@ -39,20 +52,20 @@
   </p>
   <a href="https://www.facebook.com/ggc.berlin?ref=hl">
   <span class="fa-stack fa-lg">
-    <i class="fa fa-circle-thin fa-stack-2x"></i>
-    <i class="fa fa-facebook-f fa-stack-1x"></i>
+    <i class="fa fa-stack-2x mycircle"></i>
+    <i class="fa fa-facebook-f fa-stack-1x mylogo"></i>
   </span>
   </a>
   <a href="https://twitter.com/ggCarrotsBerlin">
   <span class="fa-stack fa-lg">
-    <i class="fa fa-circle-thin fa-stack-2x"></i>
-    <i class="fa fa-twitter"></i>
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-twitter mylogo"></i>
   </span>
   </a>
 </div>
 
 <a name="event"></a>
-<div class="container-fluid padding-top-bottom" style="background-color:#FD775B;color:white">
+<div id="event" class="container-fluid padding-top-bottom" style="background-color:#FD775B;color:white">
   <h1>EVENT</h1>
 
   <div class="row">
@@ -83,7 +96,7 @@
 </div>
 
 <a name="schedule"></a>
-<div class="container-fluid padding-top-bottom">
+<div id="schedule" class="container-fluid padding-top-bottom">
   <h1 style="color: #FD775B">SCHEDULE</h1>
 
   <div class="container">
@@ -223,7 +236,7 @@
 </div>
 
 <a name="location"></a>
-<div class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
+<div id="location" class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
   <h1 class="no-padding-bottom">LOCATION</h1>
 
   <h2 class="padding-top-bottom">HERE, Invalidenstr. 116, 10115 Berlin</h2>
@@ -247,7 +260,7 @@
 </script>
 
 <a name="team"></a>
-<div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
+<div id="team" class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
   <h1>TEAM</h1>
 
   <ul class="nav nav-pills padding-bottom">
@@ -304,7 +317,7 @@
 </div>
 
 <a name="sponsors"></a>
-<div class="container-fluid padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
+<div id="sponsors" class="container-fluid padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
   <h1>SPONSORS & PARTNERS</h1>
 
   <div class="row">
@@ -338,11 +351,11 @@
 </div>
 
 <a name="faq"></a>
-<div class="container-fluid padding-top-bottom" style="color:#4D4D4D">
+<div id="faq" class="container-fluid padding-top-bottom" style="color:#4D4D4D">
   <h1>FAQ</h1>
 </div>
 
-<div class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
+<div id="contact" class="container-fluid padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
   <h1>CONTACT US</h1>
 
   <p class="middle-padding-bottom">

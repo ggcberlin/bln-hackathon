@@ -3,27 +3,76 @@
  *= require_tree .
  */
 //$navbar-inverse-link-color: #ffffff;
+$navbar-height: 80px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+
+
+$action-color: #FD775B;
+$background-color: #4D4D4D;
+
+// social media
+.mycircle {
+
+  &:before {
+    content: "\f1db";
+  }
+
+  &:hover {
+    color: $action-color;
+
+    &:before {
+      content: "\f111";
+
+    }
+  }
+
+  //&:hover:before {
+  //}
+}
+
+.mylogo {
+  &:hover {
+    color: $background-color;
+  }
+}
+
 
 body {
   text-align: center;
   padding-top: 70px;
+  position: relative;
+}
+
+a {
+  color: $action-color;
+
+  &:hover {
+    color: $action-color;
+  }
 }
 
 // navigation
+.navbar-brand {
+  padding: 10px 15px;
+}
+
 .navbar-custom {
   color: #ffffff;
   border-radius: 0;
   background-color: #FFFFFF;
+  //min-height: 100px;
 }
 
 .navbar-custom .navbar-nav > li > a {
   color: #4D4D4D;
   font-family: 'Orbitron', sans-serif;
+  vertical-align: baseline;
 }
 
-.navbar-custom nav .active > a {
+.navbar-custom .nav > li > a:active, .nav > li > a:focus {
   color: #ffffff;
   background-color: #FD775B;
 }
@@ -49,10 +98,10 @@ body {
   zoom: 1; /* hasLayout ie7 trigger */
   border-radius: 0 !important;
   border-style: solid;
-  border-color: #FD775B;
+  border-color: $action-color;
   font-size: 16px;
   background: #4D4D4D;
-  color: #FD775B;
+  color: $action-color;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -68,7 +117,7 @@ body {
   color: #FD775B;
 }
 a {
-  color: #FD775B;
+  color: $action-color;
 }
 
 // button
