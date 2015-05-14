@@ -14,39 +14,43 @@ $action-color: #FD775B;
 $background-color: #4D4D4D;
 
 // social media
-.mycircle {
+.social_span:hover, .social_span:focus {
+  color: #FFFFFF;}
 
-  &:before {
-    content: "\f1db";
-  }
-
-  &:hover {
-    color: $action-color;
-
-    &:before {
-      content: "\f111";
-
-    }
-  }
+//.mycircle {
+//
+//  &:before {
+//    content: "\f1db";
+//  }
+//
+//  &:hover {
+//    color: $action-color;
+//
+//    &:before {
+//      content: "\f111";
+//
+//    }
+//  }
 
   //&:hover:before {
   //}
-}
+//}
 
-.mylogo {
-  &:hover {
-    color: $background-color;
-  }
-}
+//.mylogo {
+//  &:hover {
+//    color: $background-color;
+//  }
+//}
+//
+//a {
+//  color: $action-color;
+//
+//  &:hover {
+//    color: $action-color;
+//  }
+//}
 
-a {
-  color: $action-color;
-
-  &:hover {
-    color: $action-color;
-  }
-}
-
+// body
 body {
   text-align: center;
   padding-top: 70px;
@@ -134,6 +138,7 @@ a {
   color: $action-color;
 }
 
+// header
 h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 48px;
@@ -186,6 +191,7 @@ h3.question {
   padding-bottom: 20px;
 }
 
+// paragraph
 p {
   font-family: 'SansPro', sans-serif;
   font-size: 18px;
@@ -212,6 +218,22 @@ p.bio {
   color:#ffffff;
   text-align: left;
   padding-bottom: 40px
+}
+
+p.time {
+  color: $action-color;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: left;
+}
+
+p.timetable-item {
+  color: $background-color;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 28px;
+  padding-bottom: 30px;
+  text-align: left;
 }
 
 div.padding-top-bottom {
@@ -242,21 +264,6 @@ span.highlight {
   color: $action-color;
 }
 
-p.time {
-  color: $action-color;
-  font-size: 18px;
-  font-family: 'Orbitron', sans-serif;
-  text-align: left;
-}
-
-p.timetable-item {
-  color: $background-color;
-  font-size: 20px;
-  font-family: 'Orbitron', sans-serif;
-  line-height: 28px;
-  padding-bottom: 30px;
-  text-align: left;
-}
 
 a.social a:hover, a:focus {
   color: #23527c;
