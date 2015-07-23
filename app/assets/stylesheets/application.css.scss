@@ -44,7 +44,7 @@ body {
   color: $background-color;
   font-family: 'Orbitron', sans-serif;
   vertical-align: baseline;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .navbar-default .nav > li > a:active, .nav > li > a:focus {
@@ -137,7 +137,7 @@ h2.padding-top-bottom {
 }
 
 h2.name {
-  color :#ffffff;
+  color :$white;
   text-align: left;
 }
 
@@ -184,7 +184,7 @@ p.no-margin {
 }
 
 p.bio {
-  color:#ffffff;
+  color:$white;
   text-align: left;
   padding-bottom: 40px
 }
