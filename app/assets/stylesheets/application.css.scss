@@ -2,7 +2,6 @@
  *= require_self
  *= require_tree .
  */
-//$navbar-inverse-link-color: #ffffff;
 $navbar-height: 80px;
 
 @import "bootstrap-sprockets";
@@ -12,43 +11,11 @@ $navbar-height: 80px;
 
 $action-color: #FD775B;
 $background-color: #4D4D4D;
+$white: #FFFFFF;
 
 // social media
 .social_span:hover, .social_span:focus {
-  color: #FFFFFF;}
-
-//.mycircle {
-//
-//  &:before {
-//    content: "\f1db";
-//  }
-//
-//  &:hover {
-//    color: $action-color;
-//
-//    &:before {
-//      content: "\f111";
-//
-//    }
-//  }
-
-  //&:hover:before {
-  //}
-//}
-
-//.mylogo {
-//  &:hover {
-//    color: $background-color;
-//  }
-//}
-//
-//a {
-//  color: $action-color;
-//
-//  &:hover {
-//    color: $action-color;
-//  }
-//}
+  color: $white;}
 
 // body
 body {
@@ -68,26 +35,24 @@ body {
   padding: 10px 15px;
 }
 
-.navbar-custom {
+.navbar-default {
   border-radius: 0;
-  background-color: #FFFFFF;
-  //min-height: 100px;
+  background-color: $white;
 }
 
-.navbar-custom .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
   color: $background-color;
   font-family: 'Orbitron', sans-serif;
   vertical-align: baseline;
   font-size: 16px;
-  //height: 30px;
 }
 
-.navbar-custom .nav > li > a:active, .nav > li > a:focus {
-  color: #ffffff;
+.navbar-default .nav > li > a:active, .nav > li > a:focus {
+  color: $white;
   background-color: $action-color;
 }
 
-.navbar-custom .nav > li > a:hover {
+.navbar-default .nav > li > a:hover {
   color: $action-color;
   background-color: transparent;
 }
