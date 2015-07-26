@@ -14,8 +14,20 @@ $background-color: #4D4D4D;
 $white: #FFFFFF;
 
 // social media
-.social_span:hover, .social_span:focus {
-  color: $white;}
+.social_span {
+
+  &:hover {
+    color: $white;
+  }
+
+  &:active {
+    color: $white;
+  }
+
+  &:visited {
+    color: $white;
+  }
+}
 
 // body
 body {
@@ -44,7 +56,7 @@ body {
   color: $background-color;
   font-family: 'Orbitron', sans-serif;
   vertical-align: baseline;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .navbar-default .nav > li > a:active, .nav > li > a:focus {
@@ -84,9 +96,16 @@ body {
   background: $background-color;
   color: $action-color;
 }
+
+
 a {
   color: $action-color;
+
+  &:focus {
+    color: $white;
+  }
 }
+
 
 // button
 .btn-sharp {
@@ -233,8 +252,10 @@ span.highlight {
   color: $action-color;
 }
 
-
-a.social a:hover, a:focus {
+/*
+a.social a:hover, a:focus, a:active {
   color: #23527c;
   text-decoration: underline;
 }
+
+*/
