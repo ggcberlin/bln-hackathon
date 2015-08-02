@@ -229,6 +229,10 @@ div.padding-top-bottom {
   padding-bottom: 100px;
 }
 
+div.padding-bottom {
+  padding-bottom: 200px;
+}
+
 div.padding-top-bottom-mini {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -251,11 +255,3 @@ ul.padding-bottom {
 span.highlight {
   color: $action-color;
 }
-
-/*
-a.social a:hover, a:focus, a:active {
-  color: #23527c;
-  text-decoration: underline;
-}
-
-*/
