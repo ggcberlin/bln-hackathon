@@ -13,6 +13,10 @@ $action-color: #FD775B;
 $background-color: #4D4D4D;
 $white: #FFFFFF;
 
+/*html {
+  max-width: 1080px;
+}*/
+
 // social media
 .social_span {
 
@@ -69,6 +73,7 @@ body {
   background-color: transparent;
 }
 
+
 // tabs
 .nav-pills > li {
   float: none;
@@ -114,6 +119,7 @@ a {
   background: $action-color;
   border-style: solid;
   border-color: $background-color;
+  color: $background-color;
 }
 
 .btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
