@@ -12,6 +12,7 @@ $navbar-height: 80px;
 $action-color: #FD775B;
 $background-color: #4D4D4D;
 $white: #FFFFFF;
+$grey: #717171;
 
 html {
   max-width: 1080px;
@@ -24,15 +25,22 @@ html {
 .social_span {
 
   &:hover {
-    color: $white;
+    color: $grey;
   }
 
   &:active {
-    color: $white;
+    color: $grey;
   }
 
   &:visited {
-    color: $white;
+    color: $grey;
+  }
+}
+a {
+  color: $action-color;
+
+  &:focus {
+    color: $grey;
   }
 }
 
@@ -101,19 +109,9 @@ body {
 
 .nav-pills > li > a:hover {
   border-radius: 0 !important;
-  background: $background-color;
+  background: $grey;
   color: $action-color;
 }
-
-
-a {
-  color: $action-color;
-
-  &:focus {
-    color: $white;
-  }
-}
-
 
 // button
 .btn-sharp {
