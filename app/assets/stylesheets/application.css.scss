@@ -183,7 +183,10 @@ h3.padding-top {
 }
 
 h3.question {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 // paragraph
@@ -195,7 +198,7 @@ p {
 }
 
 p.answer {
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   padding-left: 40px;
   padding-right: 40px;
 }
