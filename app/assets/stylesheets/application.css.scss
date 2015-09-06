@@ -13,9 +13,12 @@ $action-color: #FD775B;
 $background-color: #4D4D4D;
 $white: #FFFFFF;
 
-/*html {
+html {
   max-width: 1080px;
-}*/
+}
+#max-width-container {
+  max-width: 1000px;
+}
 
 // social media
 .social_span {
