@@ -14,13 +14,6 @@ $background-color: #4D4D4D;
 $white: #FFFFFF;
 $grey: #717171;
 
-html {
-  max-width: 1080px;
-}
-#max-width-container {
-  max-width: 1000px;
-}
-
 // social media
 .social_span {
 
@@ -250,6 +243,11 @@ div.padding-top-bottom-mini {
 
 div.padding-bottom-mini {
   padding-bottom: 30px;
+}
+
+div.event {
+  max-width: 450px; 
+  word-wrap:break-word;
 }
 
 div.padding-top {
