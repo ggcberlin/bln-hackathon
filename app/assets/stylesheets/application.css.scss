@@ -64,7 +64,7 @@ body {
   color: $background-color;
   font-family: 'Orbitron', sans-serif;
   vertical-align: baseline;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .navbar-default .nav > li > a:active, .nav > li > a:focus {
@@ -120,6 +120,12 @@ body {
   background: $background-color;
   border-color: $action-color;
   color: $action-color;
+
+.btn-orange {
+  border-color: $action-color;
+  color: $action-color;
+  background: $background-color;
+}
 }
 
 // header
