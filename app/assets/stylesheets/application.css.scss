@@ -1,13 +1,11 @@
+$navbar-height: 65px;
 /*
  *= require_self
  *= require_tree .
  */
-$navbar-height: 80px;
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-
 
 $action-color: #FD775B;
 $background-color: #4D4D4D;
@@ -40,7 +38,7 @@ a {
 // body
 body {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 65px;
   position: relative;
 }
 
@@ -52,7 +50,7 @@ body {
 
 // navigation
 .navbar-brand {
-  padding: 10px 15px;
+  padding: 5px 8px;
 }
 
 .navbar-default {
@@ -120,12 +118,12 @@ body {
   background: $background-color;
   border-color: $action-color;
   color: $action-color;
+}
 
 .btn-orange {
   border-color: $action-color;
   color: $action-color;
   background: $background-color;
-}
 }
 
 // header
@@ -154,7 +152,7 @@ h1.middle-padding-bottom, h2.middle-padding-bottom, p.middle-padding-bottom {
 }
 
 h2.padding-top {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 h2.padding-top-bottom {
@@ -175,10 +173,6 @@ h3 {
   font-size: 18px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-h2.padding-top {
-  padding-top: 70px;
 }
 
 h3.question {
@@ -233,12 +227,15 @@ p.timetable-item {
   text-align: left;
 }
 
+// div
+div.padding-top {
+  padding-top: 100px;
+}
+
 div.padding-top-bottom {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
-
 
 div.padding-top-bottom-mini {
   padding-top: 50px;
@@ -254,10 +251,6 @@ div.event {
   word-wrap:break-word;
 }
 
-div.padding-top {
-  padding-top: 100px;
-}
-
 div.no-left-right-margin {
   margin-left: 0px;
   margin-right: 0px;
@@ -268,10 +261,47 @@ div.sponsor-logo {
   padding-bottom: 20px;
 }
 
+
+// other
+
 ul.padding-bottom {
   padding-bottom: 60px;
 }
 
 span.highlight {
   color: $action-color;
+}
+
+// small devices
+
+@media (max-width: 768px) {  
+  div.padding-top-bottom {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  div.padding-top {
+    padding-top: 45px;
+  }
+  h1 {
+    padding-bottom: 40px;
+  }
+  h2 {
+    padding-bottom: 20px;
+  }
+  h2.padding-top-bottom {
+    padding-bottom: 40px;
+  }
+  h2.padding-top {
+    padding-top: 35;
+  }
+  div.sponsor-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  p.timetable-item {
+    padding-bottom: 20px;
+  }
+  div.padding-bottom-mini {
+    padding-bottom: 20px;
+  }
 }
