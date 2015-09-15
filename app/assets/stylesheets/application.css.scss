@@ -126,6 +126,21 @@ body {
   background: $background-color;
 }
 
+.btn-sharp {
+  border-radius: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: $action-color;
+  border-style: solid;
+  border-color: $background-color;
+  color: $background-color;
+}
+
+.btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
+  background: $background-color;
+  border-color: $action-color;
+  color: $action-color;
+}
+
 // header
 h1 {
   font-family: 'Orbitron', sans-serif;
