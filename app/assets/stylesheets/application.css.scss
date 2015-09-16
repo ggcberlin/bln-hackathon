@@ -120,28 +120,20 @@ body {
   color: $action-color;
 }
 
-.btn-sharp-orange {
+.btn-sharp-event {
   border-radius: 0;
   font-family: 'Orbitron', sans-serif;
   border-style: solid;
   border-color: $action-color;
   color: $action-color;
-  background: $background-color;
+  background: $white;
 }
 
-.btn-sharp {
-  border-radius: 0;
-  font-family: 'Orbitron', sans-serif;
+
+.btn-sharp-event:hover, .btn-sharp-event:focus, .btn-sharp-event:active, .btn-sharp-event.active, .open > .dropdown-toggle.btn-sharp {
   background: $action-color;
-  border-style: solid;
-  border-color: $background-color;
-  color: $background-color;
-}
-
-.btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
-  background: $background-color;
-  border-color: $action-color;
-  color: $action-color;
+  border-color: $white;
+  color: $white;
 }
 
 // header
