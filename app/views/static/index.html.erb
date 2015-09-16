@@ -69,7 +69,7 @@
     </div>
 </div>
 
-<a name="event"/>
+<a name="event"></a>
 <div id="event" class="padding-top-bottom" style="background-color:#FD775B;color:white">
     <div class="container">
         <h1>EVENT</h1>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- <p class="middle-padding-bottom no-margin button">
-            <a class="btn btn-default btn-lg btn-sharp btn-orange" target="_blank" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">Register now!</a>
+            <a class="btn btn-default btn-lg btn-sharp-orange" target="_blank" href="https://docs.google.com/forms/d/1u3RtvSBi_s5j3OpXen5MsJQzFaG7UuAHTO9e6Rl6T5Q/viewform?usp=send_form" role="button">Register now!</a>
         </p> -->
     </div>
 </div>
@@ -146,7 +146,7 @@
                             <p class="time">7 pm - 10 pm</p>
                         </div>
                         <div class="col-sm-3 ">
-                            <p class="timetable-item">Kick-off meeting at Plug'n'Play, Markgrafenstraße 14, 10969 Berlin</p>
+                            <p class="timetable-item padding-bottom">Kick-off meeting at Plug'n'Play, </p> <p class="address">Markgrafenstraße 14, 10969 Berlin</p>
                         </div>
                     </div>
                 </div>
@@ -314,7 +314,6 @@
 
         <h2 class="padding-top-bottom">HERE, Invalidenstr. 116, 10115 Berlin</h2>
 
-        <!-- <div id="map-canvas" style="height: 500px" class="no-left-right-margin"></div> -->
         <div id="map" style="width: 100%; height: 500px" />
     </div>
 </div>
@@ -323,19 +322,6 @@
 
 
 <script type="text/javascript" charset="UTF-8">
-            // function initialize() {
-            //   var mapCanvas = document.getElementById('map-canvas');
-            //   var mapOptions = {
-            //     center: new google.maps.LatLng(52.530935, 13.384933),
-            //     zoom: 15,
-            //     mapTypeId: google.maps.MapTypeId.ROADMAP,
-            //     scrollwheel: false, 
-            //     draggable: false
-            //   }
-            //   var map = new google.maps.Map(mapCanvas, mapOptions)
-            // }
-            // google.maps.event.addDomListener(window, 'load', initialize);
-            // 
 
 /**
  * Moves the map to display over Berlin
@@ -456,7 +442,17 @@ addMarkersToMap(map);
                 </div>
             </div>
             <div class="tab-pane fade" id="mentors">
-                <p>To be announced</p>
+                <div class="row">
+                    <div class="col-sm-4 padding-bottom-mini">
+                        <%= image_tag "bastian.jpg", size: "200", class: "img-circle" %>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2 class="name">Bastian Gruber</h2>
+
+                        <p class="bio">Bastian studied computer science and has worked in the IT business for over 8 years now. He is mostly working in the front end and is interested in a sustainable lifestyle. Next to coding, doing and participating in art projects are his next favourite hobby.  
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="organizers">
                 <div class="row">
@@ -534,14 +530,19 @@ addMarkersToMap(map);
             </div>
             <h2 class="padding-top">Partners:</h2>
             <div class="row padding-bottom-mini">
-                <div class="col-md-6 col-xs-12 sponsor-logo">
+                <div class="col-md-4 col-xs-12 sponsor-logo">
                     <a href="http://www.young-targets.com/">
                         <%= image_tag "target.png", size: "200x100" %>
                     </a>
                 </div>
-                <div class="col-sm-6 col-xs-12">
+                <div class="col-md-4 col-xs-12 sponsor-logo"">
                     <a href="http://www.bild.de/">
                         <%= image_tag "bild.png" %>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-12 sponsor-logo"">
+                    <a href="http://www.gruenderszene.de/jobboerse/">
+                        <%= image_tag "gruenderszene.png" %>
                     </a>
                 </div>
             </div>
