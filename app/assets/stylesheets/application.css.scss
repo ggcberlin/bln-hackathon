@@ -149,6 +149,10 @@ h1.no-padding-bottom, div.no-padding-bottom {
   padding-bottom: 0px;
 }
 
+h1.contact {
+  padding-bottom: 30px;
+}
+
 h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 30px;
@@ -246,6 +250,14 @@ p.kick-off {
   text-align: left;
 }
 
+p.contact {
+  color: $action-color;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 28px;
+  padding-bottom: 10px;
+  text-align: center;
+}
 
 p.padding-bootom {
   padding-bottom: 10px;  
@@ -258,6 +270,14 @@ p.address {
   line-height: 28px;
   padding-bottom: 30px;
   text-align: left;
+}
+
+p.footer {
+  color: $background-color;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 28px;
+  padding-bottom: 30px;
 }
 
 // div
@@ -289,11 +309,15 @@ div.no-left-right-margin {
   margin-right: 0px;
 }
 
-div.sponsor-logo {
+div.s-logo {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+div.contact {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
 
 // other
 
@@ -327,7 +351,7 @@ span.highlight {
   h2.padding-top {
     padding-top: 35;
   }
-  div.sponsor-logo {
+  div.s-logo {
     padding-top: 10px;
     padding-bottom: 10px;
   }
