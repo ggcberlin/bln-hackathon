@@ -329,6 +329,13 @@ span.highlight {
   color: $action-color;
 }
 
+li.prizes {
+  text-align: left;
+}
+p.prizes {
+  text-align: center;
+}
+
 // small devices
 
 @media (max-width: 768px) {  
