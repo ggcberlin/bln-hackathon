@@ -301,7 +301,27 @@
     <div id="map-canvas" style="height: 500px" class="no-left-right-margin"></div>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+      function initMap() {
+        var myLatLng = {lat: 52.505183, lng: 13.394997};
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 15,
+          draggable: false
+        });
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpIu9bqbTSkk1ZWJdp_gauXswx3-jVj3E&callback=initMap"
+    async defer></script>
+
+  <!-- <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script>
       function initialize() {
           var myLatLng = {lat: 52.505183, lng: 13.394997};
@@ -321,7 +341,7 @@
           var map = new google.maps.Map(mapCanvas, mapOptions)
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+  </script> -->
 
 <a name="team"></a>
 <div id="team" class="padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
