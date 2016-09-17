@@ -48,7 +48,7 @@
 
         <%= image_tag "hack_like_a_Girl_final.svg" %>
 
-        <h2 class="padding-top middle-padding-bottom">Hackathon: Diversity in tech</h2>
+        <h2 class="padding-top middle-padding-bottom">Hackathon: Health & Fitness</h2>
 
         <h1 class="no-padding-bottom middle-padding-bottom">14 - 16 October 2016</h1>
 
@@ -75,25 +75,23 @@
     <div class="container">
         <h1>EVENT</h1>
         <div class="row">
-            <!-- <div class="col-sm-4 col-xs-12 padding-bottom-mini event">
+            <div class="col-sm-4 col-xs-12 padding-bottom-mini event">
                 <h2>Topic</h2>
 
-                <p>The theme of the hackathon is “diversity in tech”. We want to attract more women to the IT industry and make sure they feel comfortable and their ideas and skills are appreciated. That's why we welcome women and men who support this idea to collaborate during one weekend. You can work on your own ideas or help realize ideas of your team mates! Our sponsors will provide APIs, so you will have great data to build your products on. Our mentors will help you if you get stuck and show how to work with the APIs. Judges will give valuable feedback for all teams on Sunday.
+                <p>We want to attract more women to the IT industry and make sure they feel comfortable and their ideas and skills are appreciated. That's why we welcome women and men who support this idea to collaborate during one weekend. The topic of the hackathon is <b>Health & Fitness</b>. Our sponsors will provide APIs, so you will have great data to build your products on. Our mentors will help you if you get stuck and show how to work with the APIs.
                 </p>
             </div>
             <div class="col-sm-4 col-xs-12 padding-bottom-mini event">
                 <h2>Application</h2>
 
-                <p>You want to take part? Awesome!
-                    Start by clicking on the “Register Now” button below and filling out the application form.
-                    It will be reviewed by the Geek Girls Carrots team to make sure we have a perfect mix of expertise areas and levels. We welcome idea masterminds, developers, designers, data scientists and marketers, beginners and experts.
-                    After a successful review, you will receive an email from us asking you to make the final reservation via Eventbrite.
-                    The amount of participants is limited to 50 people, so hurry up to get your spot! </p>
+                <p>You want to take part? 
+                    Start by clicking on the “Register Now” button below and registering on the Eventbrite page. You will need to pay a deposit fee, which will be transferred back to you on Saturday if you come to the hackathon. We welcome idea masterminds, developers, designers, data scientists and marketers, beginners and experts.
+                    The amount of participants is limited, so hurry up to get your spot! </p>
             </div>
             <div class="col-sm-4 col-xs-12 padding-bottom-mini event">
                 <h2>Prizes</h2>
-
-                <ul>
+                <p>All participants will get goodies from our sponsors. More information about prizes will be published soon!</p>
+                <!-- <ul>
                     <li class="prizes">1st prize: Smartwatch Sony SWR50 Silver
                     <p class="prizes"><%= image_tag "watch.jpg", size: "100" %></p>
                     </li>
@@ -104,15 +102,16 @@
                     <p class="prizes"><%= image_tag "box.jpg", size: "100" %></p></li>
                     <li class="prizes">Special prize from SoundCloud: 1 year premium account
                     </li>
-                </ul>
-            </div> -->
+                </ul> -->
+            </div>
         </div>
 
-        <!-- <p class="no-margin button">
-            <a class="btn btn-default btn-lg btn-sharp-event" target="_blank" href="http://www.eventbrite.de/e/hack-like-a-girl-hackathon-tickets-18915336280" role="button">Register now!</a>
-        </p> -->
+        <p class="middle-padding-bottom  no-margin button">
+            <a class="btn btn-default btn-lg btn-sharp-event" target="_blank" href="https://www.eventbrite.com/e/hack-like-a-girl-2016-tickets-27370056576" role="button">Register now!</a>
+        </p>
+
+        <iframe src="https://player.vimeo.com/video/144333548" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <iframe src="https://player.vimeo.com/video/144333548" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
   <a name="schedule"></a>
@@ -321,28 +320,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpIu9bqbTSkk1ZWJdp_gauXswx3-jVj3E&callback=initMap"
     async defer></script>
 
-  <!-- <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script>
-      function initialize() {
-          var myLatLng = {lat: 52.505183, lng: 13.394997};
-          var mapCanvas = document.getElementById('map-canvas');
-          var mapOptions = {
-              center: new google.maps.LatLng(myLatLng),
-              zoom: 15,
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              scrollwheel: false, 
-              draggable: false
-          }
-          var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Hello World!'
-          });
-          var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-  </script> -->
-
 <a name="team"></a>
 <div id="team" class="padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
     <div class="container">
@@ -367,14 +344,19 @@
         <div class="container">
             <h1>SPONSORS & PARTNERS</h1>
             <div class="row">
-                <div class="col-md-6 col-xs-12 s-logo">
+                <div class="col-md-4 col-xs-12 s-logo">
                     <a href="https://www.zalando.de">
                         <%= image_tag "zalando_logo.png", size: "400x150" %>
                     </a>
                 </div>
-                <div class="col-md-6 col-xs-12 s-logo">
+                <div class="col-md-4 col-xs-12 s-logo">
                     <a href="http://go.sap.com/index.html">
                         <%= image_tag "sap.jpg" %>
+                    </a>
+                </div>  
+                <div class="col-md-4 col-xs-12 s-logo">
+                    <a href="http://www.ebay.de">
+                        <%= image_tag "ebay.svg", size: "380x130"  %>
                     </a>
                 </div>     
             </div>
