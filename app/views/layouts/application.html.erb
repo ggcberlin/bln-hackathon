@@ -9,7 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
+<script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".page-scroll").click(function(event) {
+          event.preventDefault();
+          $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+        } );
+      } );
 
+      jQuery(document).ready(function($) {
+        $('.navbar-collapse').click('li', function() {
+          $('.navbar-collapse').collapse('hide');
+        });
+      } );
+    </script>
 <%= yield %>
 
 </body>
