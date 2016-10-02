@@ -132,12 +132,6 @@
                             <p class="timetable-item">Get-together & Kick-off</p>                                                        
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 col-sm-3 col-sm-offset-3">
-                            <p class="address">
-                            Address of the kick-off event: Schlesische Strasse 29-30</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -321,24 +315,45 @@
   <div id="location" class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
     <h1>LOCATION</h1>
 
-    <h2 class="padding-bottom">Penthouse Unternehmerclub, Markgrafenstraße 14, 10969 Berlin</h2>
-
-    <div id="map-canvas" style="height: 500px" class="no-left-right-margin"></div>
+    <div class="row">
+        <div class="col-md-6 col-xs-12">            
+            <h2 class="padding-bottom">Kick-off</h2>
+            <h3>Native Instruments, Schlesische Straße 29-30, 10997 Berlin</h3>
+            <div id="map-canvas" style="height: 500px" class="map"></div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <h2 class="padding-bottom">Hackathon</h2>
+            <h3>Penthouse Unternehmerclub, Markgrafenstraße 14, 10969 Berlin</h3>
+            <div id="map-canvas2" style="height: 500px" class="map"></div>
+        </div>
+    </div>
   </div>
 
   <script>
       function initMap() {
-        var myLatLng = {lat: 52.505183, lng: 13.394997};
+        var kickOff = {lat: 52.498691, lng: 13.446904};
+        var hackathon = {lat: 52.505183, lng: 13.394997};
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
-          center: myLatLng,
+          center: kickOff,
           scrollwheel: false,
           zoom: 15,
           draggable: false
         });
         var marker = new google.maps.Marker({
-            position: myLatLng,
+            position: kickOff,
             map: map,
-            title: 'Hello World!'
+            title: 'Kick-off'
+        });
+        var map2 = new google.maps.Map(document.getElementById('map-canvas2'), {
+          center: hackathon,
+          scrollwheel: false,
+          zoom: 15,
+          draggable: false
+        });        
+        var marker2 = new google.maps.Marker({
+            position: hackathon,
+            map: map2,
+            title: 'Hackathon'
         });
       }
 
