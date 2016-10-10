@@ -12,3 +12,6 @@
 !/log/.keep
 /tmp
 .idea/workspace.xml
+
+.idea/runConfigurations/
+.DS_Store

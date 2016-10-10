@@ -84,25 +84,23 @@
             <div class="col-sm-4 col-xs-12 padding-bottom-mini event">
                 <h2>Application</h2>
 
-                <p>You want to take part? 
+                <p>You want to take part?
                     Start by clicking on the “Register Now” button below and registering on the Eventbrite page. You will need to pay a deposit fee, which will be transferred back to you on Saturday if you come to the hackathon. We welcome idea masterminds, developers, designers, data scientists and marketers, beginners and experts.
                     The amount of participants is limited, so hurry up to get your spot! </p>
             </div>
             <div class="col-sm-4 col-xs-12 padding-bottom-mini event">
                 <h2>Prizes</h2>
-                <p>All participants will get goodies from our sponsors. The best three teams will be awarded prizes by our jury! The prizes will include equipment for Virtual Reality apps, fitness tracking devices and tickets to the "Data Natives" conference.</p>
-                <!-- <ul>
-                    <li class="prizes">1st prize: Smartwatch Sony SWR50 Silver
+                <p>All participants will get goodies from our sponsors. The best three teams will be awarded prizes by our jury!</p>
+                <!--<ul>
+                    <li class="prizes">1st prize: Zeiss VR glasses and tickets to Native Data conference
                     <p class="prizes"><%= image_tag "watch.jpg", size: "100" %></p>
                     </li>
-                    <li class="prizes">2nd prize: Jawbone UP move
+                    <li class="prizes">2nd prize: Arduino
                     <p class="prizes"><%= image_tag "jawbone.jpg", size: "100" %></p>
                     </li>
-                    <li class="prizes">Special prize from GLOSSYBOX: 6 months subscription
+                    <li class="prizes">3 prize: Amazon gift certificates
                     <p class="prizes"><%= image_tag "box.jpg", size: "100" %></p></li>
-                    <li class="prizes">Special prize from SoundCloud: 1 year premium account
-                    </li>
-                </ul> -->
+                </ul>-->
             </div>
         </div>
 
@@ -129,7 +127,7 @@
                             <p class="time">7 pm - 10 pm</p>
                         </div>
                         <div class="col-sm-4 ">
-                            <p class="timetable-item">Get-together & Kick-off</p>                                                        
+                            <p class="timetable-item">Get-together & Kick-off</p>
                         </div>
                     </div>
                 </div>
@@ -316,7 +314,7 @@
     <h1>LOCATION</h1>
 
     <div class="row">
-        <div class="col-md-6 col-xs-12">            
+        <div class="col-md-6 col-xs-12">
             <h2 class="padding-bottom">Kick-off</h2>
             <h3>Native Instruments, Schlesische Straße 29-30, 10997 Berlin</h3>
             <div id="map-canvas" style="height: 500px" class="map"></div>
@@ -349,7 +347,7 @@
           scrollwheel: false,
           zoom: 15,
           draggable: false
-        });        
+        });
         var marker2 = new google.maps.Marker({
             position: hackathon,
             map: map2,
@@ -394,12 +392,12 @@
                     <a href="http://www.ey.com/">
                         <%= image_tag "EY.jpg", size: "180" %>
                     </a>
-                </div> 
+                </div>
                 <div class="col-md-4 col-xs-12 s-logo">
                     <a href="http://go.sap.com/index.html">
                         <%= image_tag "sap.jpg" %>
                     </a>
-                </div>  
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-xs-12 s-logo">
@@ -411,13 +409,13 @@
                     <a href="https://www.zalando.de">
                         <%= image_tag "zalando_logo.png", size: "300x110" %>
                     </a>
-                </div>   
+                </div>
                 <div class="col-md-4 col-xs-12 s-logo">
                     <a href="http://www.technology-ebay.de">
                         <%= image_tag "ebay.svg", size: "250x80"  %>
                     </a>
                 </div>
-                
+
             </div>
             <div class="row">
                 <div class="col-md-3 col-xs-12 s-logo"">
@@ -425,7 +423,7 @@
                         <%= image_tag "gb.png", size: "200x80"%>
                     </a>
                 </div>
-                
+
                 <div class="col-md-3 col-xs-12 s-logo"">
                     <a href="https://www.thoughtworks.com">
                         <%= image_tag "tw.svg", size: "200x80"%>
@@ -451,16 +449,33 @@
             </div>
             <h2 class="padding-top">Partners:</h2>
             <div class="row padding-bottom-mini">
-                <div class="col-md-6 col-xs-12 s-logo">
+                <div class="col-md-4 col-xs-12 s-logo">
                     <a href="http://www.young-targets.com/">
                         <%= image_tag "target.png", size: "200x100" %>
                     </a>
                 </div>
-                <div class="col-md-6 col-xs-12 s-logo">
-                    <a href="https://www.sociomantic.com/">
-                        <%= image_tag "sociomantic.jpg", size: "250x70" %>
-                    </a>
+                <div class="col-md-4 col-xs-12 s-logo">
+                  <a href="http://datanatives.io/">
+                  <%= image_tag "datanative.jpg", size: "100" %>
+                  </a>
                 </div>
+              <div class="col-md-4 col-xs-12 s-logo">
+                <a href="https://www.sociomantic.com/">
+                  <%= image_tag "sociomantic.jpg", size: "250x70" %>
+                </a>
+              </div>
+              </div>
+              <div class="row padding-bottom-mini">
+                <div class="col-md-6 col-xs-12 s-logo">
+                  <a href="http://healthcare-startups.de/">
+                    <%= image_tag "HSD_Logo_blue.png", size: "350x80"%>
+                  </a>
+                </div>
+              <div class="col-md-6 col-xs-12 s-logo">
+                <a href="https://challengerocket.com/">
+                  <%= image_tag "CHALLENGEROCKET.png", size: "250x70"%>
+                </a>
+              </div>
             </div>
             <h2 class="padding-top-bottom-mini">If you are interested to be our sponsor, media partner or provide a public API with tutoring support, please send us an <a href="mailto:ggc.berlin@gmail.com"> email!</a></h2>
         </div>
@@ -506,7 +521,7 @@
 <div id="contact" class="contact" style="background-color:#4D4D4D;color:#FD775B">
     <div class="container">
         <h1 class="contact">CONTACT US</h1>
-        <p class="contact"> If you have any questions, please, write us!</p> 
+        <p class="contact"> If you have any questions, please, write us!</p>
         <p class="middle-padding-bottom button">
             <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com"  target="_blank" role="button">Send a message</a>
         </p>
