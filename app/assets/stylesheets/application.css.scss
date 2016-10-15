@@ -342,6 +342,11 @@ p.prizes {
   font-color: $grey;
 }
 
+ol.judging-rules {
+  text-align: left;
+  font-size: 18px;
+}
+
 // small devices
 
 @media (max-width: 768px) {  
