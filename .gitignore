@@ -12,10 +12,6 @@
 !/log/.keep
 /tmp
 
-.idea/
-.idea/misc.xml
-.idea/runConfigurations/Development__berlin_hackathon.xml
-.idea/runConfigurations/Production__berlin_hackathon.xml
-.idea/workspace.xml
+.idea/*
 
 .DS_Store
