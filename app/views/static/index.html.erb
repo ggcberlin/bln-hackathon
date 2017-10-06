@@ -1,80 +1,66 @@
 <div id="max-width-container">
-    <nav class="navbar navbar-custom navbar-default navbar-fixed-top" id="navbar-example">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" style="margin-left: 0px margin-right: 0px">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><%= image_tag "ggc.png", size: "55x60" %></a>
-            </div>
+  <nav class="navbar navbar-custom navbar-default navbar-fixed-top" id="navbar-example">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" style="margin-left: 0px margin-right: 0px">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><%= image_tag "ggc.png", size: "55x60" %></a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#event" class="page-scroll">EVENT</a></li>
-                    <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
-                    <li><a href="#location" class="page-scroll">LOCATION</a></li>
-                    <li><a href="#team" class="page-scroll">TEAM</a></li>
-                    <li><a href="#sponsors" class="page-scroll">SPONSORS</a></li>
-                    <li><a href="#faq" class="page-scroll">FAQ</a></li>
-                    <li><a href="#contact" class="page-scroll">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#event" class="page-scroll">EVENT</a></li>
+          <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
+          <li><a href="#location" class="page-scroll">LOCATION</a></li>
+          <li><a href="#team" class="page-scroll">TEAM</a></li>
+          <li><a href="#sponsors" class="page-scroll">SPONSORS</a></li>
+          <li><a href="#faq" class="page-scroll">FAQ</a></li>
+          <li><a href="#contact" class="page-scroll">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
-<script type="text/javascript">
-      jQuery(document).ready(function($) {
-        $(".page-scroll").click(function(event) {
-          event.preventDefault();
-          $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
-        } );
-      } );
-
-      jQuery(document).ready(function($) {
-        $('.navbar-collapse').click('li', function() {
-          $('.navbar-collapse').collapse('hide');
-        });
-      } );
-    </script>
 
 <div id="welcome" class="padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B ">
-    <div class="container">
+  <div class="container">
 
-        <%= image_tag "hack_like_a_Girl_final.svg" %>
+    <%= image_tag "hack_like_a_Girl_final.svg" %>
 
-        <h2 class="padding-top middle-padding-bottom">Hackathon</h2>
+    <h2 class="padding-top middle-padding-bottom">Hackathon</h2>
 
-        <h1 class="no-padding-bottom middle-padding-bottom">13 - 15 October 2017</h1>
+    <h1 class="no-padding-bottom middle-padding-bottom">13 - 15 October 2017</h1>
 
-        <p class="middle-padding-bottom no-margin button">
-            <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="https://www.eventbrite.com/e/hack-like-a-girl-travel-tickets-36473009754" role="button">Register now!</a>
-        </p>
-        <a href="https://www.facebook.com/ggc.berlin/" target="_blank">
+    <p class="middle-padding-bottom no-margin button">
+      <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="https://www.eventbrite.com/e/hack-like-a-girl-travel-tickets-36473009754" role="button">Register now!</a>
+    </p>
+    <a href="https://www.facebook.com/ggc.berlin/" target="_blank">
           <span class="social_span fa-stack fa-2x">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-facebook-f fa-stack-1x"></i>
           </span>
-        </a>
-        <a href="https://twitter.com/ggCarrotsBerlin">
+    </a>
+    <a href="https://twitter.com/ggCarrotsBerlin">
           <span class="social_span fa-stack fa-2x">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-twitter fa-stack-1x"></i>
           </span>
-        </a>
-    </div>
+    </a>
+  </div>
 </div>
 
 <a name="event"></a>
 <div id="event" class="padding-top-bottom" style="background-color:#FD775B;color:white">
-    <h1 style="color: white">EVENT</h1>
-    <div class="container">
-      <iframe src="https://player.vimeo.com/video/189506698" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
+  <h1 style="color: white">EVENT</h1>
+  <div class="container">
+    <iframe src="https://player.vimeo.com/video/189506698" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 </div>
 
 <a name="schedule"></a>
@@ -316,146 +302,277 @@
 
 <a name="team"></a>
 <div id="team" class="padding-top-bottom" style="background-color:#4D4D4D;color:#FD775B">
-    <div class="container">
-        <h1>TEAM</h1>
-        <div id="organizers">
-                <div class="row">
-                    <div class="col-sm-4 padding-bottom-mini">
-                        <%= image_tag "ggcberlin.jpeg", size: "200", class: "img-circle" %>
-                    </div>
-                    <div class="col-sm-8">
-                        <h2 class="name">Geek Girls Carrots Berlin</h2>
+  <div class="container">
+    <h1>TEAM</h1>
+    <ul class="nav nav-pills padding-bottom">
+      <li class="active"><a href="#mentors" data-toggle="tab">MENTORS</a></li>
+      <li><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
+    </ul>
 
-                        <p class="bio">Geek Girls Carrots Berlin is a Berlin chapter of the global organisation focused on connecting, learning and inspiring women in Tech and IT. We create community by organising meetings, workshops, and other events, which gather people to share their knowledge and experience. We bring together female admins, developers, designers, women with startup ideas, computer science students and many more. </p>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </div>
-
-    <a name="sponsors"></a>
-    <div id="sponsors" class="padding-top-bottom" style="background-color:white;color:#4D4D4D">
-        <div class="container">
-            <h1>SPONSORS & PARTNERS 2017</h1>
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
-                    <a href="http://www.lufthansa.com/">
-                        <%= image_tag "lufthansa.png", class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
-                  <a href="http://go.sap.com/index.html">
-                    <%= image_tag "sap.png", class: 'img-responsive center-block' %>
-                  </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
-                    <a href="https://www.axelspringer.de/en/">
-                        <%= image_tag "axel.png", class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
-                    <a href="https://www.cornelsen.de/">
-                        <%= image_tag "cornelsen.png", class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
-                    <a href="https://www.iav.com/">
-                        <%= image_tag "iav.png", class: 'img-responsive' %>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo"">
-                    <a href="https://www.thoughtworks.com">
-                        <%= image_tag "thoughts.png", class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo"">
-                    <a href="https://futurice.com/">
-                        <%= image_tag "futurica.png", class: 'img-responsive' %>
-                    </a>
-                </div>
-            </div>
-            <h2 class="padding-top">Partners:</h2>
-            <div class="row padding-bottom-mini">
-                <div class="col-sm-4  col-sm-offset-2 col-xs-8 col-xs-offset-2 s-logo">
-                  <a href="https://www.sociomantic.com/">
-                  <%= image_tag "sociomantic.png", class: 'img-responsive' %>
-                  </a>
-                </div> 
-                <div class="col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 s-logo">
-                    <a href="https://www.young-targets.com/">
-                        <%= image_tag "young.png", class: 'img-responsive center-block'  %>
-                    </a>
-                </div>             
-            </div>
-            <h2 class="padding-top-bottom-mini">If you are interested to be our sponsor, media partner or provide a public API with tutoring support, please send us an <a href="mailto:ggc.berlin@gmail.com"> email!</a></h2>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="mentors">
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "babette.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Babette Wagner <span class="mentor-company">Axel Springer</span></h2>
+            <p class="bio">Babette is a very experienced developer who has been working in the development of web
+              applications for 10 years with a focus on Java backend. After she enjoyed the experience as a Hack like a
+              Girl mentor in 2016 she is looking forward to participating again this year.
+            </p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "igor_schneider.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Igor Schneider <span class="mentor-company">Cornelsen Verlag GmbH</span></h2>
+            <p class="bio">Igor Schneider is originally from Croatia. In his home country he studied informatics and
+              physics. Most of his experience was collected within the field of client development. He is most
+              comfortable working in web. His hobbies are eating burger, angular and long walks along the beach.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "marcel.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Marcel Tannhäuser <span class="mentor-company">Cornelsen Verlag GmbH</span></h2>
+            <p class="bio">Marcel Tannhäuser did an apprenticeship 15 years ago to become an IT specialist and is a
+              developer ever since. He also likes web or desktop GUIs and is mostly working where nothing is found
+              except for stack trace and console. As a native Bielefelder his motto is: Geht nicht, gibt’s nicht
+              (Nothing’s impossible). At least not when it’s possible to apply Java.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "ulrich.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Ulrich Helker <span class="mentor-company">Cornelsen Verlag GmbH</span></h2>
+            <p class="bio">Ulrich Helker studied informatics and economic sciences at RWTH Aachen. In Berlin he founded
+              a company for IT solutions within the fitness industry and worked as an IT consultant within the finance
+              industry. At Cornelsen Verlag he is working as a solution architect.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "nina.png", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Nina <span class="mentor-company">Futurice</span></h2>
+            <p class="bio">Nina is a software developer working at Futurice. Her background is in engineering, and
+              during her career she has worked on various software and web development projects (React, JS, UX design,
+              Scrum Master etc.) in Finland and in the UK. In her free time she enjoys exercising at group fitness
+              classes, yoga, reading on her Kindle, swimming, and teaching her kids to code.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "daniela.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Daniela Tang <span class="mentor-company">Lufthansa Systems</span></h2>
+            <p class="bio">From the Baltic sea Daniela Tang moved to Hamburg for a dual study majoring in business
+              informatics. After university she kept loyal to Lufthansa Systems and stayed in Norderstedt. At the moment
+              she is supporting a project in Frankfurt as an IT consultant. Her specialities are besides
+              godzilla-bug-tracking and software repair analytics of any kind as well as configuration puzzles.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "stephanie.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Stephanie Piwon <span class="mentor-company">Lufthansa Systems</span></h2>
+            <p class="bio">After her oceanography studies with a minor in informatics and various climate research
+              commitments at the sea Stephanie Piwon moved to the field of aviation. At first she worked at Lufthansa
+              Technik and currently she is with Lufthansa Systems. She is mainly responsible for the analysis and
+              implementation of complex customer query in the field of crew action planning of different airlines.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "hannes.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Hannes Rauhe <span class="mentor-company">SAP Innovation Center Potsdam</span></h2>
+            <p class="bio">Hannes Rauhe studied informatics in Ilmenau and did his promotion with SAP HANA. He has many
+              years of experience with database development and currently works with new big data technologies at
+              SAP.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "josephine.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Josephine Rückert <span class="mentor-company">SAP Innovation Center Potsdam</span></h2>
+            <p class="bio">Josephine Rückert studied informatics in Ilmenau and is currently working with innovative
+              monitoring solutions for big data applications at SAP.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "frank.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Frank Huber <span class="mentor-company">SAP Innovation Center Potsdam</span></h2>
+            <p class="bio">Frank studied at Humboldt university in Berlin and finished his studies with a promotion
+              about data base. Since 2010 he’s been working with the HANA team based in Berlin. During his time at SAP
+              he has gone through many different fields of duties. Currently he is occupying his days with
+              multitenancy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="organizers">
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "ggcberlin.jpeg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Geek Girls Carrots Berlin</h2>
+            <p class="bio">Geek Girls Carrots Berlin is a Berlin chapter of the global organisation focused on connecting,
+              learning and inspiring women in Tech and IT. We create community by organising meetings, workshops, and
+              other events, which gather people to share their knowledge and experience. We bring together female admins,
+              developers, designers, women with startup ideas, computer science students and many more. </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+</div>
+
+<a name="sponsors"></a>
+<div id="sponsors" class="padding-top-bottom" style="background-color:white;color:#4D4D4D">
+  <div class="container">
+    <h1>SPONSORS & PARTNERS 2017</h1>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
+        <a href="https://www.lufthansa.com/">
+          <%= image_tag "lufthansa.png", class: 'img-responsive' %>
+        </a>
+      </div>
+      <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
+        <a href="http://go.sap.com/index.html">
+          <%= image_tag "sap.png", class: 'img-responsive center-block' %>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
+        <a href="https://www.axelspringer.de/en/">
+          <%= image_tag "axel.png", class: 'img-responsive' %>
+        </a>
+      </div>
+      <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
+        <a href="https://www.cornelsen.de/">
+          <%= image_tag "cornelsen.png", class: 'img-responsive' %>
+        </a>
+      </div>
+      <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
+        <a href="https://www.iav.com/">
+          <%= image_tag "iav.png", class: 'img-responsive' %>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo"">
+      <a href="https://www.thoughtworks.com">
+        <%= image_tag "thoughts.png", class: 'img-responsive' %>
+      </a>
+    </div>
+    <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo"">
+    <a href="https://futurice.com/">
+      <%= image_tag "futurica.png", class: 'img-responsive' %>
+    </a>
+  </div>
+</div>
+<h2 class="padding-top">Partners:</h2>
+<div class="row padding-bottom-mini">
+  <div class="col-sm-4  col-sm-offset-2 col-xs-8 col-xs-offset-2 s-logo">
+    <a href="https://www.sociomantic.com/">
+      <%= image_tag "sociomantic.png", class: 'img-responsive' %>
+    </a>
+  </div>
+  <div class="col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 s-logo">
+    <a href="https://www.young-targets.com/">
+      <%= image_tag "young.png", class: 'img-responsive center-block'  %>
+    </a>
+  </div>
+</div>
+<h2 class="padding-top-bottom-mini">If you are interested to be our sponsor, media partner or provide a public API with tutoring support, please send us an <a href="mailto:ggc.berlin@gmail.com"> email!</a></h2>
+</div>
+</div>
 </div>
 
 <a name="faq"></a>
 <div id="faq" class="padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
-    <div class="container">
-        <h1>FAQ</h1>
-        <h3 class="question">What do I need to do to attend?</h3>
-        <p class="answer">Please, register for the hackathon on Eventbrite. Since we want to make sure that those who register also show up, we kindly ask you for a deposit of 10€ via Eventbrite. The full amount will be transfered back to you on Saturday!
-        </p>
-        <h3 class="question">What if I don’t have an idea or a team?</h3>
-        <p class="answer">You shouldn’t be concerned about the lack of an idea or a team. We are organising a kick-off meeting 1 day before the Hackathon. During the meeting you will be able to find out more about the projects, form a team of your own or join an existing one. You will also have a chance to chat with the members of the closed Facebook group that was created for the Hackathon.
-        </p>
-        <h3 class="question">Can non-developers also join the event?</h3>
-        <p class="answer">Sure! We welcome various professions, like designers, product managers, marketing managers, data scientists, etc.  </p>
-        <h3 class="question">What kind of hackers are you looking for?</h3>
-        <p class="answer">We are looking for all kind of IT creative and innovative people: software, hardware, mobile, web with any coding language. We search for friendly and enthusiastic people with a global perspective.
-        </p>
-        <h3 class="question">How much experience do I need?</h3>
-        <p class="answer">Anyone is free to apply, but we focus mostly on people with some technical experience. The applicants will be evaluated fairly and with the use of multiple filters.
-        </p>
-        <h3 class="question">What is the official language of the Hackathon?</h3>
-        <p class="answer">The official language of our event is English. Of course, you can also communicate in German but you should keep in mind the non-German speakers. Let’s make sure that no one feels left out.
-        </p>
-        <h3 class="question">What do I need to take with me?</h3>
-        <p class="answer">First of all, try to come as well-rested as possible. You will need a clear mind and fresh ideas. Other than this, all you have to bring along is your laptop and a charger. We will take care of the rest.
-        </p>
-        <h3 class="question">Will I get to know the API and other participants before the event starts?</h3>
-        <p class="answer">Yes, we will organise a kick-off meeting on Friday, one day before the event starts. This way all the participants will get to know each other. The API will be presented by mentors from each companies during venue.  </p>
-        <h3 class="question">Are there any prizes?</h3>
-        <p class="answer">“Hack like a girl” is all about diversity, collaboration, meeting new friends and exchanging experience rather than about competition. Thus, prizes are not the focus, just a bonus. We will provide more detail on the sponsored prizes in the near future.</p>
-        <h3 class="question">If you want to encourage more women to work in IT, why is it not a women-only hackathon?</h3>
-        <p class="answer">We want to support women to be more present in the IT world. For that we want to encourage women to take on more jobs in IT and to encourage men who work beside them to be more supportive of that. In our opinion envolving men in this process is just as important as encouraging women!</p>
-        <h3 class="question">Is there a code of conduct for the hackathon?</h3>
-        <p class="answer">Sure, we want to ensure that everyone's opinion and work is respeted. All attendees, sponsors and mentors at the hackathon are required to agree with the following code of conduct. We are expecting cooperation from all participants to help ensuring a safe environment for everybody. Our hackathon is dedicated to providing a harassment-free experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any parts of our events, including talks, workshops, Twitter and other online media. Attendees violating these rules may be sanctioned or expelled from this hackathon and/or any future meetups at the discretion of the organisers.</p>
-    </div>
+  <div class="container">
+    <h1>FAQ</h1>
+    <h3 class="question">What do I need to do to attend?</h3>
+    <p class="answer">Please, register for the hackathon on Eventbrite. Since we want to make sure that those who register also show up, we kindly ask you for a deposit of 10€ via Eventbrite. The full amount will be transfered back to you on Saturday!
+    </p>
+    <h3 class="question">What if I don’t have an idea or a team?</h3>
+    <p class="answer">You shouldn’t be concerned about the lack of an idea or a team. We are organising a kick-off meeting 1 day before the Hackathon. During the meeting you will be able to find out more about the projects, form a team of your own or join an existing one. You will also have a chance to chat with the members of the closed Facebook group that was created for the Hackathon.
+    </p>
+    <h3 class="question">Can non-developers also join the event?</h3>
+    <p class="answer">Sure! We welcome various professions, like designers, product managers, marketing managers, data scientists, etc.  </p>
+    <h3 class="question">What kind of hackers are you looking for?</h3>
+    <p class="answer">We are looking for all kind of IT creative and innovative people: software, hardware, mobile, web with any coding language. We search for friendly and enthusiastic people with a global perspective.
+    </p>
+    <h3 class="question">How much experience do I need?</h3>
+    <p class="answer">Anyone is free to apply, but we focus mostly on people with some technical experience. The applicants will be evaluated fairly and with the use of multiple filters.
+    </p>
+    <h3 class="question">What is the official language of the Hackathon?</h3>
+    <p class="answer">The official language of our event is English. Of course, you can also communicate in German but you should keep in mind the non-German speakers. Let’s make sure that no one feels left out.
+    </p>
+    <h3 class="question">What do I need to take with me?</h3>
+    <p class="answer">First of all, try to come as well-rested as possible. You will need a clear mind and fresh ideas. Other than this, all you have to bring along is your laptop and a charger. We will take care of the rest.
+    </p>
+    <h3 class="question">Will I get to know the API and other participants before the event starts?</h3>
+    <p class="answer">Yes, we will organise a kick-off meeting on Friday, one day before the event starts. This way all the participants will get to know each other. The API will be presented by mentors from each companies during venue.  </p>
+    <h3 class="question">Are there any prizes?</h3>
+    <p class="answer">“Hack like a girl” is all about diversity, collaboration, meeting new friends and exchanging experience rather than about competition. Thus, prizes are not the focus, just a bonus. We will provide more detail on the sponsored prizes in the near future.</p>
+    <h3 class="question">If you want to encourage more women to work in IT, why is it not a women-only hackathon?</h3>
+    <p class="answer">We want to support women to be more present in the IT world. For that we want to encourage women to take on more jobs in IT and to encourage men who work beside them to be more supportive of that. In our opinion envolving men in this process is just as important as encouraging women!</p>
+    <h3 class="question">Is there a code of conduct for the hackathon?</h3>
+    <p class="answer">Sure, we want to ensure that everyone's opinion and work is respeted. All attendees, sponsors and mentors at the hackathon are required to agree with the following code of conduct. We are expecting cooperation from all participants to help ensuring a safe environment for everybody. Our hackathon is dedicated to providing a harassment-free experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any parts of our events, including talks, workshops, Twitter and other online media. Attendees violating these rules may be sanctioned or expelled from this hackathon and/or any future meetups at the discretion of the organisers.</p>
+  </div>
 </div>
 
 <a name="contact"></a>
 <div id="contact" class="contact" style="background-color:#4D4D4D;color:#FD775B">
-    <div class="container">
-        <h1 class="contact">CONTACT US</h1>
-        <p class="contact"> If you have any questions, please, write us!</p>
-        <p class="middle-padding-bottom button">
-            <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com"  target="_blank" role="button">Send a message</a>
-        </p>
-    </div>
+  <div class="container">
+    <h1 class="contact">CONTACT US</h1>
+    <p class="contact"> If you have any questions, please, write us!</p>
+    <p class="middle-padding-bottom button">
+      <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com"  target="_blank" role="button">Send a message</a>
+    </p>
+  </div>
 </div>
 <div class='footer'>
-    <div class='container-fluid padding-top-bottom-mini' style="background-color:#FD775B;color:#4D4D4D">
-        <!-- <p class="footer">
-        <div class="row">
-            <div class="col-sm-4 col-xs-12 ">
-                <a href="http://www.meetup.com/de/Geek-Girls-Carrots-Berlin/events/225441168/"> Meetup page</a>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <a href="http://geekgirlscarrots.org/"> http://geekgirlscarrots.org/</a>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <a href="https://www.facebook.com/ggc.berlin?ref=hl"> Facebook</a>
-            </div>
+  <div class='container-fluid padding-top-bottom-mini' style="background-color:#FD775B;color:#4D4D4D">
+    <!-- <p class="footer">
+    <div class="row">
+        <div class="col-sm-4 col-xs-12 ">
+            <a href="http://www.meetup.com/de/Geek-Girls-Carrots-Berlin/events/225441168/"> Meetup page</a>
         </div>
-        </p> -->
-        <h3>Copyright © Geek Girls Carrots Berlin 2017</h3>
+        <div class="col-sm-4 col-xs-12">
+            <a href="http://geekgirlscarrots.org/"> http://geekgirlscarrots.org/</a>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <a href="https://www.facebook.com/ggc.berlin?ref=hl"> Facebook</a>
+        </div>
     </div>
+    </p> -->
+    <h3>Copyright © Geek Girls Carrots Berlin 2017</h3>
+  </div>
 </div>
