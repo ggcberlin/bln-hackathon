@@ -308,6 +308,7 @@
     <h1>TEAM</h1>
     <ul class="nav nav-pills padding-bottom">
       <li class="active"><a href="#mentors" data-toggle="tab">MENTORS</a></li>
+      <li><a href="#jury" data-toggle="tab">JURY</a></li>
       <li><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
     </ul>
 
@@ -461,6 +462,43 @@
           </div>
         </div>
       </div>
+      <div class="tab-pane fade" id="jury">
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "Tim.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Tim R. Adam</h2>
+            <p class="bio">Tim R. Adam is the Rudolf-von-Bennigsen-Professor of Corporate Finance at Humboldt
+              University, Berlin, Germany. His primary research interests lie in the areas of empirical corporate
+              finance, especially corporate risk management, and financial intermediation. Current research projects
+              focus on the use of performance pricing provisions in syndicated loans, the use of leverage by mutual
+              funds, and capital market financing of SMEs in Germany.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "DanielLou.jpg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Daniel Lou </h2>
+            <p class="bio">Daniel is a technology strategist at SAP and is interested in all aspects of data management.
+              He has worked on such topics for many years in various organizations, and had designed and led development
+              of many data intensive applications for customers in Asia and Europe.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 padding-bottom-mini">
+            <%= image_tag "franziska.jpeg", size: "200", class: "img-circle" %>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="name">Franziska Kleiner</h2>
+            <p class="bio">I am the Social and Economic Justice Lead for ThoughtWorks Germany. My focus is connecting
+              ThoughtWorks to active communities and engaging with people who are working towards a more just and
+              prosperous world.</p>
+          </div>
+        </div>
+      </div>
       <div class="tab-pane fade" id="organizers">
         <div class="row">
           <div class="col-sm-4 padding-bottom-mini">
@@ -468,9 +506,11 @@
           </div>
           <div class="col-sm-8">
             <h2 class="name">Geek Girls Carrots Berlin</h2>
-            <p class="bio">Geek Girls Carrots Berlin is a Berlin chapter of the global organisation focused on connecting,
+            <p class="bio">Geek Girls Carrots Berlin is a Berlin chapter of the global organisation focused on
+              connecting,
               learning and inspiring women in Tech and IT. We create community by organising meetings, workshops, and
-              other events, which gather people to share their knowledge and experience. We bring together female admins,
+              other events, which gather people to share their knowledge and experience. We bring together female
+              admins,
               developers, designers, women with startup ideas, computer science students and many more. </p>
           </div>
         </div>
@@ -514,12 +554,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo"">
+      <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo">
       <a href="https://www.thoughtworks.com">
         <%= image_tag "thoughts.png", class: 'img-responsive' %>
       </a>
     </div>
-    <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo"">
+    <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3 s-logo">
     <a href="https://futurice.com/">
       <%= image_tag "futurica.png", class: 'img-responsive' %>
     </a>
@@ -534,11 +574,12 @@
   </div>
   <div class="col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 s-logo">
     <a href="https://www.young-targets.com/">
-      <%= image_tag "young.png", class: 'img-responsive center-block'  %>
+      <%= image_tag "young.png", class: 'img-responsive center-block' %>
     </a>
   </div>
 </div>
-<h2 class="padding-top-bottom-mini">If you are interested to be our sponsor, media partner or provide a public API with tutoring support, please send us an <a href="mailto:ggc.berlin@gmail.com"> email!</a></h2>
+<h2 class="padding-top-bottom-mini">If you are interested to be our sponsor, media partner or provide a public API with
+  tutoring support, please send us an <a href="mailto:ggc.berlin@gmail.com"> email!</a></h2>
 </div>
 </div>
 </div>
@@ -548,33 +589,56 @@
   <div class="container">
     <h1>FAQ</h1>
     <h3 class="question">What do I need to do to attend?</h3>
-    <p class="answer">Please, register for the hackathon on Eventbrite. Since we want to make sure that those who register also show up, we kindly ask you for a deposit of 10€ via Eventbrite. The full amount will be transfered back to you on Saturday!
+    <p class="answer">Please, register for the hackathon on Eventbrite. Since we want to make sure that those who
+      register also show up, we kindly ask you for a deposit of 10€ via Eventbrite. The full amount will be transfered
+      back to you on Saturday!
     </p>
     <h3 class="question">What if I don’t have an idea or a team?</h3>
-    <p class="answer">You shouldn’t be concerned about the lack of an idea or a team. We are organising a kick-off meeting 1 day before the Hackathon. During the meeting you will be able to find out more about the projects, form a team of your own or join an existing one. You will also have a chance to chat with the members of the closed Facebook group that was created for the Hackathon.
+    <p class="answer">You shouldn’t be concerned about the lack of an idea or a team. We are organising a kick-off
+      meeting 1 day before the Hackathon. During the meeting you will be able to find out more about the projects, form
+      a team of your own or join an existing one. You will also have a chance to chat with the members of the closed
+      Facebook group that was created for the Hackathon.
     </p>
     <h3 class="question">Can non-developers also join the event?</h3>
-    <p class="answer">Sure! We welcome various professions, like designers, product managers, marketing managers, data scientists, etc.  </p>
+    <p class="answer">Sure! We welcome various professions, like designers, product managers, marketing managers, data
+      scientists, etc. </p>
     <h3 class="question">What kind of hackers are you looking for?</h3>
-    <p class="answer">We are looking for all kind of IT creative and innovative people: software, hardware, mobile, web with any coding language. We search for friendly and enthusiastic people with a global perspective.
+    <p class="answer">We are looking for all kind of IT creative and innovative people: software, hardware, mobile, web
+      with any coding language. We search for friendly and enthusiastic people with a global perspective.
     </p>
     <h3 class="question">How much experience do I need?</h3>
-    <p class="answer">Anyone is free to apply, but we focus mostly on people with some technical experience. The applicants will be evaluated fairly and with the use of multiple filters.
+    <p class="answer">Anyone is free to apply, but we focus mostly on people with some technical experience. The
+      applicants will be evaluated fairly and with the use of multiple filters.
     </p>
     <h3 class="question">What is the official language of the Hackathon?</h3>
-    <p class="answer">The official language of our event is English. Of course, you can also communicate in German but you should keep in mind the non-German speakers. Let’s make sure that no one feels left out.
+    <p class="answer">The official language of our event is English. Of course, you can also communicate in German but
+      you should keep in mind the non-German speakers. Let’s make sure that no one feels left out.
     </p>
     <h3 class="question">What do I need to take with me?</h3>
-    <p class="answer">First of all, try to come as well-rested as possible. You will need a clear mind and fresh ideas. Other than this, all you have to bring along is your laptop and a charger. We will take care of the rest.
+    <p class="answer">First of all, try to come as well-rested as possible. You will need a clear mind and fresh ideas.
+      Other than this, all you have to bring along is your laptop and a charger. We will take care of the rest.
     </p>
     <h3 class="question">Will I get to know the API and other participants before the event starts?</h3>
-    <p class="answer">Yes, we will organise a kick-off meeting on Friday, one day before the event starts. This way all the participants will get to know each other. The API will be presented by mentors from each companies during venue.  </p>
+    <p class="answer">Yes, we will organise a kick-off meeting on Friday, one day before the event starts. This way all
+      the participants will get to know each other. The API will be presented by mentors from each companies during
+      venue. </p>
     <h3 class="question">Are there any prizes?</h3>
-    <p class="answer">“Hack like a girl” is all about diversity, collaboration, meeting new friends and exchanging experience rather than about competition. Thus, prizes are not the focus, just a bonus. We will provide more detail on the sponsored prizes in the near future.</p>
+    <p class="answer">“Hack like a girl” is all about diversity, collaboration, meeting new friends and exchanging
+      experience rather than about competition. Thus, prizes are not the focus, just a bonus. We will provide more
+      detail on the sponsored prizes in the near future.</p>
     <h3 class="question">If you want to encourage more women to work in IT, why is it not a women-only hackathon?</h3>
-    <p class="answer">We want to support women to be more present in the IT world. For that we want to encourage women to take on more jobs in IT and to encourage men who work beside them to be more supportive of that. In our opinion envolving men in this process is just as important as encouraging women!</p>
+    <p class="answer">We want to support women to be more present in the IT world. For that we want to encourage women
+      to take on more jobs in IT and to encourage men who work beside them to be more supportive of that. In our opinion
+      envolving men in this process is just as important as encouraging women!</p>
     <h3 class="question">Is there a code of conduct for the hackathon?</h3>
-    <p class="answer">Sure, we want to ensure that everyone's opinion and work is respeted. All attendees, sponsors and mentors at the hackathon are required to agree with the following code of conduct. We are expecting cooperation from all participants to help ensuring a safe environment for everybody. Our hackathon is dedicated to providing a harassment-free experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any parts of our events, including talks, workshops, Twitter and other online media. Attendees violating these rules may be sanctioned or expelled from this hackathon and/or any future meetups at the discretion of the organisers.</p>
+    <p class="answer">Sure, we want to ensure that everyone's opinion and work is respeted. All attendees, sponsors and
+      mentors at the hackathon are required to agree with the following code of conduct. We are expecting cooperation
+      from all participants to help ensuring a safe environment for everybody. Our hackathon is dedicated to providing a
+      harassment-free experience for everyone, regardless of gender, age, sexual orientation, disability, physical
+      appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual
+      language and imagery is not appropriate for any parts of our events, including talks, workshops, Twitter and other
+      online media. Attendees violating these rules may be sanctioned or expelled from this hackathon and/or any future
+      meetups at the discretion of the organisers.</p>
   </div>
 </div>
 
@@ -584,7 +648,8 @@
     <h1 class="contact">CONTACT US</h1>
     <p class="contact"> If you have any questions, please, write us!</p>
     <p class="middle-padding-bottom button">
-      <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com"  target="_blank" role="button">Send a message</a>
+      <a class="btn btn-default btn-lg btn-sharp" href="mailto:ggc.berlin@gmail.com" target="_blank" role="button">Send
+        a message</a>
     </p>
   </div>
 </div>
