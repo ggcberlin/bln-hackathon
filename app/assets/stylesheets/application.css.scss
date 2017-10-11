@@ -331,8 +331,10 @@ span.highlight {
   color: $action-color;
 }
 
-li.prizes {
+ul.prizes {
   text-align: left;
+  font-size: 20px;
+  list-style: none;
 }
 p.prizes {
   text-align: left;
@@ -349,6 +351,10 @@ ol.judging-rules {
 
 .mentor-company {
   font-size: 16px;
+}
+
+.prize {
+  font-color: white;
 }
 
 // small devices
