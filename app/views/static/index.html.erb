@@ -16,8 +16,8 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#event" class="page-scroll">EVENT</a></li>
-          <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
-          <li><a href="#location" class="page-scroll">LOCATION</a></li>
+          <!-- <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
+          <li><a href="#location" class="page-scroll">LOCATION</a></li> -->
           <li><a href="#team" class="page-scroll">TEAM</a></li>
           <li><a href="#sponsors" class="page-scroll">SPONSORS</a></li>
           <li><a href="#faq" class="page-scroll">FAQ</a></li>
@@ -35,10 +35,10 @@
 
     <h2 class="padding-top middle-padding-bottom">Hackathon</h2>
 
-    <h1 class="no-padding-bottom middle-padding-bottom">13 - 15 October 2017</h1>
+    <h1 class="no-padding-bottom middle-padding-bottom">October 2018</h1>
 
     <p class="middle-padding-bottom no-margin button">
-      <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="https://www.eventbrite.com/e/hack-like-a-girl-travel-tickets-36473009754" role="button">Register now!</a>
+      <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="" role="button">Register now!</a>
     </p>
     <a href="https://www.facebook.com/ggc.berlin/" target="_blank">
           <span class="social_span fa-stack fa-2x">
@@ -63,24 +63,13 @@
       <div class="col-sm-6">
         <h2>Prizes</h2>
         <ul class="prizes">
-          <li>Flight tickets from Lufthansa Systems</li>
-          <li>Puck Microcontroller from SAP</li>
-          <li>Calliope Mini from Cornelsen</li>
-          <li>Berliner Buddy Bär from IAV</li>
-          <li>Workshops from Futurice</li>
-          <li>Add on for Raspberry Pi from ThoughtWorks</li>
-          <li>“GOTO Berlin” conference Tickets</li>
+          <li>TBA</li>
         </ul>
       </div>
       <div class="col-sm-6">
         <h2>Prize categories</h2>
         <ul class="prizes">
-          <li>Best project</li>
-          <li>Best design</li>
-          <li>Best team work</li>
-          <li>Best technical implementation</li>
-          <li>Best startup idea</li>
-          <li>...</li>
+          <li>TBA</li>
         </ul>
       </div>
     </div>
@@ -272,6 +261,7 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">$('div#schedule').hide();</script>
 
 <a name="location"></a>
 <div id="location" class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
@@ -280,19 +270,17 @@
   <div class="row">
     <div class="col-md-6 col-xs-12">
       <h2 class="padding-bottom">Kick-off</h2>
-      <h3>BILD Bar at Axel Springer</h3>
-      <h3>Axel-Springer-Strasse 65 10969 Berlin, 10th floor</h3>
-      <div id="map-canvas" style="height: 500px" class="map"></div>
+      <h3>TBA</h3>
+      <!-- <div id="map-canvas" style="height: 500px" class="map"></div> -->
     </div>
     <div class="col-md-6 col-xs-12">
       <h2 class="padding-bottom">Hackathon</h2>
-      <h3>ThoughtWorks</h3>
-      <h3>Zimmerstrasse 23 10969 Berlin</h3>
-      <div id="map-canvas2" style="height: 500px" class="map"></div>
+      <h3>TBA</h3>
+      <!-- <div id="map-canvas2" style="height: 500px" class="map"></div> -->
     </div>
   </div>
 </div>
-
+<script type="text/javascript">$('div#location').hide();</script>
 <script>
     function initMap() {
         var kickOff = {lat: 52.507241, lng: 13.394542};
@@ -331,14 +319,14 @@
   <div class="container">
     <h1>TEAM</h1>
     <ul class="nav nav-pills padding-bottom">
-      <li class="active"><a href="#mentors" data-toggle="tab">MENTORS</a></li>
-      <li><a href="#jury" data-toggle="tab">JURY</a></li>
-      <li><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
+      <!-- <li><a href="#mentors" data-toggle="tab">MENTORS</a></li>
+      <li><a href="#jury" data-toggle="tab">JURY</a></li> -->
+      <li class="active"><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane fade in active" id="mentors">
+      <div class="tab-pane fade" id="mentors">
         <div class="row">
           <div class="col-sm-4 padding-bottom-mini">
             <%= image_tag "babette.jpg", size: "200", class: "img-circle" %>
@@ -523,7 +511,7 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="organizers">
+      <div class="tab-pane fade in active" id="organizers">
         <div class="row">
           <div class="col-sm-4 padding-bottom-mini">
             <%= image_tag "ggcberlin.jpeg", size: "200", class: "img-circle" %>
@@ -547,7 +535,7 @@
 <a name="sponsors"></a>
 <div id="sponsors" class="padding-top-bottom" style="background-color:white;color:#4D4D4D">
   <div class="container">
-    <h1>SPONSORS & PARTNERS 2017</h1>
+    <h1>SPONSORS & PARTNERS in 2017</h1>
     <div class="row">
       <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
         <a href="https://www.lufthansa.com/">
@@ -679,19 +667,6 @@
 </div>
 <div class='footer'>
   <div class='container-fluid padding-top-bottom-mini' style="background-color:#FD775B;color:#4D4D4D">
-    <!-- <p class="footer">
-    <div class="row">
-        <div class="col-sm-4 col-xs-12 ">
-            <a href="http://www.meetup.com/de/Geek-Girls-Carrots-Berlin/events/225441168/"> Meetup page</a>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <a href="http://geekgirlscarrots.org/"> http://geekgirlscarrots.org/</a>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <a href="https://www.facebook.com/ggc.berlin?ref=hl"> Facebook</a>
-        </div>
-    </div>
-    </p> -->
-    <h3>Copyright © Geek Girls Carrots Berlin 2017</h3>
+    <h3>Copyright © Geek Girls Carrots Berlin 2018</h3>
   </div>
 </div>
