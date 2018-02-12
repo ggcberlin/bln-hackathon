@@ -16,8 +16,8 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#event" class="page-scroll">EVENT</a></li>
-          <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
-          <li><a href="#location" class="page-scroll">LOCATION</a></li>
+          <!-- <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li>
+          <li><a href="#location" class="page-scroll">LOCATION</a></li> -->
           <li><a href="#team" class="page-scroll">TEAM</a></li>
           <li><a href="#sponsors" class="page-scroll">SPONSORS</a></li>
           <li><a href="#faq" class="page-scroll">FAQ</a></li>
@@ -38,7 +38,7 @@
     <h1 class="no-padding-bottom middle-padding-bottom">October 2018</h1>
 
     <p class="middle-padding-bottom no-margin button">
-      <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="https://www.eventbrite.com/e/hack-like-a-girl-travel-tickets-36473009754" role="button">Register now!</a>
+      <a class="btn btn-default btn-lg btn-sharp" target="_blank" href="" role="button">Register now!</a>
     </p>
     <a href="https://www.facebook.com/ggc.berlin/" target="_blank">
           <span class="social_span fa-stack fa-2x">
@@ -261,6 +261,7 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">$('div#schedule').hide();</script>
 
 <a name="location"></a>
 <div id="location" class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
@@ -279,7 +280,7 @@
     </div>
   </div>
 </div>
-
+<script type="text/javascript">$('div#location').hide();</script>
 <script>
     function initMap() {
         var kickOff = {lat: 52.507241, lng: 13.394542};
@@ -318,14 +319,14 @@
   <div class="container">
     <h1>TEAM</h1>
     <ul class="nav nav-pills padding-bottom">
-      <li class="active"><a href="#mentors" data-toggle="tab">MENTORS</a></li>
-      <li><a href="#jury" data-toggle="tab">JURY</a></li>
-      <li><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
+      <!-- <li><a href="#mentors" data-toggle="tab">MENTORS</a></li>
+      <li><a href="#jury" data-toggle="tab">JURY</a></li> -->
+      <li class="active"><a href="#organizers" data-toggle="tab">ORGANIZERS</a></li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane fade in active" id="mentors">
+      <div class="tab-pane fade" id="mentors">
         <div class="row">
           <div class="col-sm-4 padding-bottom-mini">
             <%= image_tag "babette.jpg", size: "200", class: "img-circle" %>
@@ -510,7 +511,7 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="organizers">
+      <div class="tab-pane fade in active" id="organizers">
         <div class="row">
           <div class="col-sm-4 padding-bottom-mini">
             <%= image_tag "ggcberlin.jpeg", size: "200", class: "img-circle" %>
@@ -534,7 +535,7 @@
 <a name="sponsors"></a>
 <div id="sponsors" class="padding-top-bottom" style="background-color:white;color:#4D4D4D">
   <div class="container">
-    <h1>SPONSORS & PARTNERS 2017</h1>
+    <h1>SPONSORS & PARTNERS in 2017</h1>
     <div class="row">
       <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 s-logo">
         <a href="https://www.lufthansa.com/">
@@ -679,6 +680,6 @@
         </div>
     </div>
     </p> -->
-    <h3>Copyright © Geek Girls Carrots Berlin 2017</h3>
+    <h3>Copyright © Geek Girls Carrots Berlin 2018</h3>
   </div>
 </div>
