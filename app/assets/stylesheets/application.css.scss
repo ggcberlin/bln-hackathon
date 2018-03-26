@@ -90,6 +90,11 @@ body {
   color: $action-color;
   font-family: 'Orbitron', sans-serif;
   width: 150px;
+  margin-bottom: 5px;
+}
+
+.nav-pills.video > li {
+  width: 90px;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
@@ -147,6 +152,10 @@ h1 {
 
 h1.no-padding-bottom, div.no-padding-bottom {
   padding-bottom: 0px;
+}
+
+div#team h1, div#achievements h1 {
+  padding-bottom: 50px;
 }
 
 h1.contact {
@@ -324,7 +333,7 @@ div.contact {
 // other
 
 ul.padding-bottom {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 span.highlight {
@@ -366,7 +375,7 @@ ol.judging-rules {
 
 @media (max-width: 768px) {  
   div.padding-top-bottom {
-    padding-top: 45px;
+    padding-top: 70px;
     padding-bottom: 40px;
   }
   div.padding-top {
@@ -392,5 +401,25 @@ ol.judging-rules {
   }
   div.padding-bottom-mini {
     padding-bottom: 20px;
+  }
+}
+
+// video
+
+@media (max-width: 768px) {  
+  .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  }
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   }
 }
