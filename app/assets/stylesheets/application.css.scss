@@ -150,8 +150,8 @@ h1 {
   margin-bottom: 0px;
 }
 
-h1.no-padding-bottom, div.no-padding-bottom {
-  padding-bottom: 0px;
+.no-padding-bottom, div.no-padding-bottom {
+  padding-bottom: 10px;
 }
 
 div#team h1, div#achievements h1 {
@@ -171,14 +171,14 @@ h2 {
 }
 
 h1.middle-padding-bottom, h2.middle-padding-bottom, p.middle-padding-bottom {
-  padding-bottom: 48px;
+  padding-bottom: 30px;
 }
 
-h2.padding-top {
-  padding-top: 70px;
+.padding-top {
+  padding-top: 40px;
 }
 
-h2.padding-top-bottom {
+.padding-top-bottom {
   padding-bottom: 80px;
 }
 
@@ -313,6 +313,15 @@ div.event {
   word-wrap:break-word;
 }
 
+.event-pics {
+  margin: 15px auto;
+}
+
+img.event-img {
+  border: 5px solid #fff;
+  margin: 10px auto;
+}
+
 div.map {
   margin-left: 20px;
   margin-right: 20px;
@@ -387,10 +396,10 @@ ol.judging-rules {
   h2 {
     padding-bottom: 20px;
   }
-  h2.padding-top-bottom {
+  .padding-top-bottom {
     padding-bottom: 40px;
   }
-  h2.padding-top {
+  .padding-top {
     padding-top: 35;
   }
   div.s-logo {
