@@ -436,3 +436,49 @@ ol.judging-rules {
   height: 100%;
   }
 }
+
+@media (max-width: 767px) {  
+
+  div#welcome {
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-color: #000;
+    background-image: url('bg-mobile.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+div.video-background {
+  display: none;
+}
+}
+
+@media (min-width: 768px) {  
+
+  * { box-sizing: border-box; }
+  .video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+    filter: brightness(40%);
+  }
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+  }
+
+}
