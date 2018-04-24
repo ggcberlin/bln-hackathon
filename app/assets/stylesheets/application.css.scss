@@ -16,22 +16,22 @@ $grey: #717171;
 .social_span {
 
   &:hover {
-    color: $grey;
+    color: rgba(255,255,255,.8);
   }
 
   &:active {
-    color: $grey;
+    color: rgba(255,255,255,.8);
   }
 
   &:visited {
-    color: $grey;
+    color: #b33e2c;
   }
 }
 a {
-  color: $action-color;
+  color: #b33e2c;
 
   &:focus {
-    color: $grey;
+    color: #b33e2c;
   }
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-default .nav > li > a:hover {
-  color: $action-color;
+  color: #b33e2c;
   background-color: transparent;
 }
 
@@ -84,13 +84,17 @@ body {
   zoom: 1; /* hasLayout ie7 trigger */
   border-radius: 0 !important;
   border-style: solid;
-  border-color: $action-color;
+  border-color: #fff;
   font-size: 16px;
-  background: $background-color;
-  color: $action-color;
+  background: #b33e2c;
+  color: #fff;
   font-family: 'Orbitron', sans-serif;
-  width: 150px;
+  width: 250px;
   margin-bottom: 5px;
+}
+
+.nav-pills > li a {
+  color: #fff;
 }
 
 .nav-pills.video > li {
@@ -99,30 +103,30 @@ body {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   border-radius: 0 !important;
-  background: $action-color;
-  color: $background-color;
+  background: rgba(255,255,255,.9);
+  color: #b33e2c;
 }
 
 .nav-pills > li > a:hover {
   border-radius: 0 !important;
-  background: $grey;
-  color: $action-color;
+  background: rgba(255,255,255,.7);
+  color: #b33e2c;
 }
 
 // button
 .btn-sharp {
   border-radius: 0;
   font-family: 'Orbitron', sans-serif;
-  background: $action-color;
+  background: #b33e2c;
   border-style: solid;
-  border-color: $background-color;
-  color: $background-color;
+  border-color: #b33e2c;
+  color: #fff;
 }
 
 .btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
-  background: $background-color;
-  border-color: $action-color;
-  color: $action-color;
+  background: rgba(255,255,255,.8);
+  border-color: #b33e2c;
+  color: #b33e2c;
 }
 
 .btn-sharp-event {
