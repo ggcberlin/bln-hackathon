@@ -24,14 +24,14 @@ $grey: #717171;
   }
 
   &:visited {
-    color: #b33e2c;
+    color: $action-color;
   }
 }
 a {
-  color: #b33e2c;
+  color: $action-color;
 
   &:focus {
-    color: #b33e2c;
+    color: $action-color;
   }
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-default .nav > li > a:hover {
-  color: #b33e2c;
+  color: $action-color;
   background-color: transparent;
 }
 
@@ -86,7 +86,7 @@ body {
   border-style: solid;
   border-color: #fff;
   font-size: 16px;
-  background: #b33e2c;
+  background: $action-color;
   color: #fff;
   font-family: 'Orbitron', sans-serif;
   width: 250px;
@@ -104,29 +104,29 @@ body {
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   border-radius: 0 !important;
   background: rgba(255,255,255,.9);
-  color: #b33e2c;
+  color: $action-color;
 }
 
 .nav-pills > li > a:hover {
   border-radius: 0 !important;
   background: rgba(255,255,255,.7);
-  color: #b33e2c;
+  color: $action-color;
 }
 
 // button
 .btn-sharp {
   border-radius: 0;
   font-family: 'Orbitron', sans-serif;
-  background: #b33e2c;
+  background: $action-color;
   border-style: solid;
-  border-color: #b33e2c;
+  border-color: $action-color;
   color: #fff;
 }
 
 .btn-sharp:hover, .btn-sharp:focus, .btn-sharp:active, .btn-sharp.active, .open > .dropdown-toggle.btn-sharp {
   background: rgba(255,255,255,.8);
-  border-color: #b33e2c;
-  color: #b33e2c;
+  border-color: $action-color;
+  color: $action-color;
 }
 
 .btn-sharp-event {
