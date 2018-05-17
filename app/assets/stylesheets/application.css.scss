@@ -84,10 +84,10 @@ body {
   zoom: 1; /* hasLayout ie7 trigger */
   border-radius: 0 !important;
   border-style: solid;
-  border-color: #fff;
+  border-color: $action-color;
   font-size: 12px;
-  background: $action-color;
-  color: #fff;
+  background: rgba(253,119,91,.6);
+  color: $action-color;
   font-family: 'Orbitron', sans-serif;
   width: 250px;
   margin-bottom: 5px;
@@ -148,8 +148,8 @@ body {
 // header
 h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 45px;
-  padding-bottom: 80px;
+  font-size: 36px;
+  padding-bottom: 40px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -180,6 +180,10 @@ h1.middle-padding-bottom, h2.middle-padding-bottom, p.middle-padding-bottom {
 
 .padding-top {
   padding-top: 40px;
+}
+
+.padding-bottom {
+  padding-bottom: 40px;
 }
 
 .padding-top-bottom {
@@ -216,8 +220,8 @@ h4 {
 
 // paragraph
 p {
-  font-family: 'SansPro', sans-serif;
-  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
   line-height: 24px;
   text-align: left;
 }
@@ -298,12 +302,17 @@ p.footer {
   padding-bottom: 30px;
 }
 
+p.text-weight {
+  font-weight: 600;
+  font-size: 16px;
+}
+
 // div
 div.padding-top {
   padding-top: 100px;
 }
 
-div.padding-top-bottom {
+.padding-top-bottom {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -447,8 +456,9 @@ ol.judging-rules {
   }
 }
 
-div#welcome, div#why {
+div#welcome {
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: 30%;
     background-color: #000;
     background-image: url('bg-desktop.jpg');
@@ -458,9 +468,23 @@ div#welcome, div#why {
     -o-background-size: cover;
   }
 
+div.img-bg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+div#why {
+  background-image: url('break1.jpg');
+  background-position: 35% center;
+}
+
 @media (max-width: 767px) {  
 
-  div#welcome, div#why {
+  div#welcome {
     background-repeat: no-repeat;
     background-position: 30%;
     background-color: #000;
