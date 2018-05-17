@@ -209,6 +209,11 @@ h3.question {
   padding-right: 40px;
 }
 
+h4 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+}
+
 // paragraph
 p {
   font-family: 'SansPro', sans-serif;
@@ -264,7 +269,7 @@ p.kick-off {
 }
 
 p.contact {
-  color: #fff;
+  color: #FD775B;
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
   line-height: 28px;
@@ -306,6 +311,11 @@ div.padding-top-bottom {
 .padding-top-bottom-mini {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.padding-top-bottom-mid {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .padding-bottom-mini {
