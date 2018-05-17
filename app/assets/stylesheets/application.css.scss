@@ -447,6 +447,17 @@ ol.judging-rules {
   }
 }
 
+div#welcome {
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-color: #000;
+    background-image: url('bg-desktop.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
 @media (max-width: 767px) {  
 
   div#welcome, div#why {
