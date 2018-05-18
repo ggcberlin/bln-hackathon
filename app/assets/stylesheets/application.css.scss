@@ -103,7 +103,7 @@ body {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   border-radius: 0 !important;
-  background: rgba(255,255,255,.9);
+  background: #fff;
   color: $action-color;
 }
 
@@ -442,7 +442,9 @@ ol.judging-rules {
   .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
+  margin: 0 25px; 
+  height: 0; 
+  overflow: hidden;
   }
 
   .video-container iframe,
