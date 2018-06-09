@@ -17,11 +17,11 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#event" class="page-scroll">ABOUT</a></li>
           <!-- <li><a href="#why" class="page-scroll">WHY</a></li> -->
-          <li><a href="#team" class="page-scroll">TEAM</a></li>
+          <!-- <li><a href="#team" class="page-scroll">TEAM</a></li> -->
           <li><a href="#sponsors" class="page-scroll">SPONSORS</a></li>
-          <!-- <li><a href="#schedule" class="page-scroll">SCHEDULE</a></li> -->
-          <!-- <li><a href="#location" class="page-scroll">LOCATION</a></li> -->
+          <!-- <li><a href="#schedule" class="page-scroll">DETAILS</a></li> -->
           <li><a href="#faq" class="page-scroll">FAQ</a></li>
+          <li><a href="#who" class="page-scroll">WHO</a></li>
           <li><a href="#contact" class="page-scroll">CONTACT</a></li>
         </ul>
       </div>
@@ -29,13 +29,7 @@
   </nav>
 </div>
 
-<!-- <div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/eSKPg5qjPxY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=eSKPg5qjPxY" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div> -->
-
-<div id="welcome" class="padding-top-bottom-mini" style="background-color: #4D4D4D; color:#FD775B">
+<div id="welcome" class="padding-top-bottom-mini" style="color:#FD775B">
   <div class="container">
 
     <%= image_tag "hack_like_a_Girl_final.svg" %>
@@ -70,27 +64,19 @@
 </div>
 
 <a name="event"></a>
-<div id="event" class="padding-top-bottom" style="background-color:#FD775B;color:white">
-  <h1 style="color: white">EVENT</h1>
+<div id="event" class="padding-top" style="background-color:#fff">
+  <h1 style="color: #FD775B">LET'S HACK !</h1>
   <div class="container">
     <div class="row">
       <div class="col-lg-offset-1 col-lg-10">
-        <p>Get hands-on at the annual Geek Girls Carrots, the two-day FinTech Hackathon for developers, graphic designers, programmers, application architects, social media specialists, system architects, and women with startup ideas.</p>
-        <p>GGC wants to engage the participants in creating FinTech solutions – made by women – by competing in many different challenges provided by our partners and participants themselves.</p>
-        <div class="row event-pics">
-          <div class="col-sm-6">
-            <%= image_tag "event2.jpg", class: "event-img img-responsive" %>
-          </div>
-          <div class="col-sm-6">
-            <%= image_tag "event1.jpg", class: "event-img img-responsive" %>
-          </div>
-        </div> 
-        <p>At the end of the “Hack like a Girl” hackathon, created results and prototypes will be rewarded and introduced to all conference attendees.</p>
+        <p class="text-weight">Get hands-on at the annual Geek Girls Carrots two-day FinTech Hackathon for developers, graphic designers, programmers, application architects, social media specialists, system architects, and women with startup ideas.</p>
+        <p>We want to engage the participants in creating FinTech solutions – made by women – by competing in many different challenges provided by our partners and participants themselves. At the end of the "Hack like a Girl" hackathon, created results and prototypes will be rewarded and introduced to all conference attendees.</p>
       </div>
     </div>
   </div>
-  <h2 class="padding-top">PAST EVENTS</h2>
-  <ul class="nav nav-pills padding-bottom video">
+</div>
+<div class="padding-bottom">
+  <ul class="nav nav-pills padding-top-bottom-mid video">
       <li class="active"><a href="#v2017" data-toggle="tab">2017</a></li>
       <li><a href="#v2016" data-toggle="tab">2016</a></li>
       <li><a href="#v2015" data-toggle="tab">2015</a></li>
@@ -122,9 +108,9 @@
     </div>
 </div>
 
-<!-- <a name="why"></a>
-<div id="why" class="padding-top-bottom" style="background-color: none ;color:#fff">
-  <h1>WHY SHOULD YOU BE THERE?</h1>
+<a name="why"></a>
+<div id="why" class="img-bg padding-top-bottom" style="background-color: none ;color:#fff; height: 500px">
+  <!-- <h1>WHY SHOULD YOU BE THERE?</h1>
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -152,10 +138,10 @@
         consequat.</p>
       </div>
     </div>
-  </div>
-</div> -->
+  </div> -->
+</div>
 
-<!-- <a name="challenges"></a>
+<a name="challenges"></a>
 <div id="challenges" class="padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
   <h1>CHALLENGES</h1>
   <div class="container">
@@ -163,13 +149,13 @@
       LIST
     </div>
   </div>
-</div> -->
+</div><script type="text/javascript">$("div#challenges").hide();</script>
 
 <a name="team"></a>
-<div id="team" class="padding-top-bottom" style="background-color:#4D4D4D;color:#fff">
+<div id="team" class="padding-top-bottom" style="background-color:#FD775B;color:#fff">
   <div class="container">
       <h1>TEAM</h1>
-      <!-- <div id="mentors">
+      <div id="mentors">
         <h1 class="padding-top-bottom-md">MENTORS</h1>
         <div class="row">
           <div class="col-sm-4 padding-bottom-mini">
@@ -246,7 +232,7 @@
               prosperous world.</p>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="row">
       <div class="col-sm-4 padding-bottom-mini">
         <%= image_tag "ggcteam.jpeg", size: "200", class: "img-circle" %>
@@ -262,7 +248,7 @@
     </div>
   </div>
 </div>
-
+<script type="text/javascript">$("div#team").hide();</script>
 <a name="sponsors"></a>
 <div id="sponsors" class="padding-top-bottom" style="background-color:white;color:#4D4D4D">
   <div class="container">
@@ -530,7 +516,7 @@
   </div>
 </div>
 <script type="text/javascript">$('div#location').hide();</script>
-<script>
+<!-- <script>
     function initMap() {
         var kickOff = {lat: 52.507241, lng: 13.394542};
         var hackathon = {lat: 52.507529, lng: 13.391356};
@@ -560,7 +546,7 @@
 
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpIu9bqbTSkk1ZWJdp_gauXswx3-jVj3E&callback=initMap"
-        async defer></script>
+        async defer></script> -->
 
 <a name="faq"></a>
 <div id="faq" class="padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
@@ -623,11 +609,27 @@ Hackathon.
   </div>
 </div>
 
-<a name="organizers"></a>
-
+<a name="who"></a>
+<div id="who" class="padding-top padding-top-bottom" style="background-color:#fff;color:#4D4D4D">
+  <div class="container">
+    <h1 class="contact" style="color:#FD775B">WHO ARE WE?</h1>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-3 padding-bottom-mini">
+        <%= image_tag "ggcteam.jpeg", size: "200", class: "img-circle" %>
+      </div>
+      <div class="col-md-7">
+        <p class="org text-weight">Geek Girls Carrots Berlin is a chapter of the global organisation focused on connecting,
+        learning and inspiring women in Tech and IT.</p><p class="org"> We create community by organising meetings, workshops, and
+        other events, which gather people to share their knowledge and experience. We bring together female
+        admins, developers, designers, women with startup ideas, computer science students and many more. 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <a name="contact"></a>
-<div id="contact" class="padding-top-bottom-mini" style="background-color:#4D4D4D;color:#FD775B">
+<div id="contact" class="img-bg" style="background-color:#EEEEEE;color:#fff">
   <div class="container">
     <h1 class="contact">CONTACT US</h1>
     <p class="contact"> If you have any questions, please, write us!</p>
@@ -655,23 +657,7 @@ Hackathon.
     </a>
   </div>
 </div>
-<!-- <div id="organizers" class="padding-top-bottom-mini" style="background-color:#4D4D4D;color:#fff">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 padding-bottom-mini">
-        <%= image_tag "ggcteam.jpeg", size: "200", class: "img-circle" %>
-      </div>
-      <div class="col-sm-8">
-        <h2 class="name">Geek Girls Carrots Berlin</h2>
-        <p class="bio">We are a Berlin chapter of the global organisation focused on connecting,
-        learning and inspiring women in Tech and IT. We create community by organising meetings, workshops, and
-        other events, which gather people to share their knowledge and experience. We bring together female
-        admins, developers, designers, women with startup ideas, computer science students and many more. 
-        </p>
-      </div>
-    </div>
-  </div>
-</div> -->
+
 <div class='footer'>
   <div class='container-fluid padding-top-bottom-mid' style="background-color:#FD775B;color:#fff">
     <h4>Copyright © Geek Girls Carrots Berlin 2018</h4>
