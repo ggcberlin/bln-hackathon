@@ -164,6 +164,7 @@ div#team h1 {
 
 h1.contact {
   padding-bottom: 60px;
+  color: #FD775B;
 }
 
 h2 {
@@ -273,7 +274,7 @@ p.kick-off {
 }
 
 p.contact {
-  color: #FD775B;
+  color: #fff;
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
   line-height: 28px;
@@ -486,6 +487,13 @@ div.img-bg {
 div#why {
   background-image: url('break1.jpg');
   background-position: 35% center;
+}
+
+div#contact {
+  background-image: url('event.jpg');
+  background-position: center top;
+  padding-top: 120px;
+  padding-bottom:120px;
 }
 
 @media (max-width: 767px) {  
