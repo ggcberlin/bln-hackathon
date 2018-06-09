@@ -16,10 +16,10 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#event" class="page-scroll">ABOUT</a></li>
-          <li><a href="#why" class="page-scroll">WHY</a></li>
-          <li><a href="#team" class="page-scroll">TEAM</a></li>
+          <!-- <li><a href="#why" class="page-scroll">WHY</a></li> -->
+          <!-- <li><a href="#team" class="page-scroll">TEAM</a></li> -->
           <li><a href="#sponsors" class="page-scroll">SPONSORS</a></li>
-          <li><a href="#schedule" class="page-scroll">DETAILS</a></li>
+          <!-- <li><a href="#schedule" class="page-scroll">DETAILS</a></li> -->
           <li><a href="#faq" class="page-scroll">FAQ</a></li>
           <li><a href="#contact" class="page-scroll">CONTACT</a></li>
         </ul>
@@ -108,8 +108,8 @@
 </div>
 
 <a name="why"></a>
-<div id="why" class="img-bg padding-top-bottom" style="background-color: none ;color:#fff">
-  <h1>WHY SHOULD YOU BE THERE?</h1>
+<div id="why" class="img-bg padding-top-bottom" style="background-color: none ;color:#fff; height: 500px">
+  <!-- <h1>WHY SHOULD YOU BE THERE?</h1>
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -137,7 +137,7 @@
         consequat.</p>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <a name="challenges"></a>
@@ -148,7 +148,7 @@
       LIST
     </div>
   </div>
-</div>
+</div><script type="text/javascript">$("div#challenges").hide();</script>
 
 <a name="team"></a>
 <div id="team" class="padding-top-bottom" style="background-color:#FD775B;color:#fff">
@@ -234,7 +234,7 @@
       </div>
   </div>
 </div>
-
+<script type="text/javascript">$("div#team").hide();</script>
 <a name="sponsors"></a>
 <div id="sponsors" class="padding-top-bottom" style="background-color:white;color:#4D4D4D">
   <div class="container">
@@ -482,7 +482,7 @@
     </div>
   </div>
 </div>
-<!-- <script type="text/javascript">$('div#schedule').hide();</script> -->
+<script type="text/javascript">$('div#schedule').hide();</script>
 
 <a name="location"></a>
 <div id="location" class="container-fluid padding-top no-padding-bottom" style="background-color:#FD775B;color:white">
@@ -501,8 +501,8 @@
     </div>
   </div>
 </div>
-<!-- <script type="text/javascript">$('div#location').hide();</script> -->
-<script>
+<script type="text/javascript">$('div#location').hide();</script>
+<!-- <script>
     function initMap() {
         var kickOff = {lat: 52.507241, lng: 13.394542};
         var hackathon = {lat: 52.507529, lng: 13.391356};
@@ -532,7 +532,7 @@
 
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpIu9bqbTSkk1ZWJdp_gauXswx3-jVj3E&callback=initMap"
-        async defer></script>
+        async defer></script> -->
 
 <a name="faq"></a>
 <div id="faq" class="padding-top-bottom" style="background-color:#EEEEEE;color:#4D4D4D">
@@ -611,7 +611,6 @@ Hackathon.
 </div>
 <div id="organizers" class="padding-top-bottom-mini" style="background-color:#4D4D4D;color:#fff">
   <div class="container">
-    <h1 class="contact">/ / /</h1>
     <div class="row">
       <div class="col-sm-offset-1 col-sm-3 padding-bottom-mini">
         <%= image_tag "ggcteam.jpeg", size: "200", class: "img-circle" %>
