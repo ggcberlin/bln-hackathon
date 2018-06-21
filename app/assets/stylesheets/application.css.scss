@@ -7,7 +7,7 @@ $navbar-height: 65px;
 @import "bootstrap";
 @import "font-awesome";
 
-$action-color: #FD775B;
+$action-color: #ff4e00;
 $background-color: #4D4D4D;
 $white: #FFFFFF;
 $grey: #717171;
@@ -86,7 +86,7 @@ body {
   border-style: solid;
   border-color: $action-color;
   font-size: 12px;
-  background: rgba(253,119,91,.6);
+  background: rgba(255,78,0,.6);
   color: $action-color;
   font-family: 'Orbitron', sans-serif;
   width: 250px;
@@ -164,7 +164,7 @@ div#team h1 {
 
 h1.contact {
   padding-bottom: 60px;
-  color: #FD775B;
+  color: $action-color;
 }
 
 h2 {
@@ -315,6 +315,10 @@ p.text-weight {
 // div
 div.padding-top {
   padding-top: 100px;
+}
+
+.padding-top-mini {
+  padding-top: 15px;
 }
 
 .padding-top-bottom {
