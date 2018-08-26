@@ -209,6 +209,10 @@ h2.active_color, h3.active_color {
   color: $action-color;
 }
 
+div#schedule h2 {
+  font-size: 22px;
+}
+
 h3 {
   font-family: 'Orbitron', sans-serif;
   font-size: 18px;
@@ -265,17 +269,17 @@ p.bio {
 
 p.time {
   color: $action-color;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Orbitron', sans-serif;
   text-align: left;
 }
 
 p.timetable-item {
   color: $background-color;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Orbitron', sans-serif;
   line-height: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   text-align: left;
 }
 
@@ -334,6 +338,10 @@ div.padding-top {
 
 .padding-top-mini {
   padding-top: 15px;
+}
+
+.padding-top-mid {
+  padding-top: 25px;
 }
 
 .padding-top-bottom {
