@@ -201,8 +201,26 @@ h1.middle-padding-bottom, h2.middle-padding-bottom, p.middle-padding-bottom {
 }
 
 h2.name {
-  color :$white;
-  text-align: left;
+  color :$action-color;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+h2.mentor-position {
+  font-size: 16px;
+  color: $grey;
+  padding-bottom: 10px;
+}
+
+#team h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+h6.hid {
+  visibility: hidden;
 }
 
 h2.active_color, h3.active_color {
@@ -427,10 +445,6 @@ ol.judging-rules {
   font-size: 18px;
 }
 
-.mentor-company {
-  font-size: 16px;
-}
-
 .prize {
   font-color: white;
 }
@@ -531,6 +545,13 @@ div#why {
 
 div#contact {
   background-image: url('event.jpg');
+  background-position: center top;
+  padding-top: 120px;
+  padding-bottom:120px;
+}
+
+div#who {
+  background-image: url('ggcteam.jpg');
   background-position: center top;
   padding-top: 120px;
   padding-bottom:120px;
