@@ -449,6 +449,27 @@ ol.judging-rules {
   font-color: white;
 }
 
+.award h1 {
+  font-size: 28px;
+}
+
+.award h2 {
+  font-size: 50px;
+  color: #ff4e00;  
+}
+
+span.carrot {
+  color: #ff4e00;
+}
+
+span.carrot:hover {
+  text-decoration: underline;
+}
+
+.award h4 {
+  padding-bottom: 10px;
+}
+
 // small devices
 
 @media (max-width: 768px) {  
@@ -541,6 +562,11 @@ div#why {
   background-image: url('break1.jpg');
   background-position: 35% center;
   text-shadow: 2px 2px 4px #000000;
+}
+
+div#awards {
+  background-image: url('bg-awards.jpg');
+  background-position: center center;
 }
 
 div#contact {
