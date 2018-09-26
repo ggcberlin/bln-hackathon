@@ -71,7 +71,7 @@ body {
   color: $background-color;
   font-family: 'Orbitron', sans-serif;
   vertical-align: baseline;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .navbar-default .nav > li > a:active, .nav > li > a:focus {
@@ -280,9 +280,9 @@ p.no-margin {
 }
 
 p.bio {
-  color:$white;
+  color:#4D4D4D;
   text-align: left;
-  padding-bottom: 40px
+  padding-bottom: 5px
 }
 
 p.time {
@@ -596,4 +596,48 @@ div#who {
     -o-background-size: cover;
   }
 
+}
+
+#jury h6 {
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+#module a.collapsed:after  {
+    content: '+ read more';
+}
+
+#module a:not(.collapsed):after {
+    content: '- read less';
+}
+
+h2.jury-name {
+  text-align: left;
+  font-size: 24px;
+  padding-bottom: 5px;
+  padding-top: 0px;
+}
+
+h2.jury-position {
+  text-align: left;
+  font-size: 16px;
+  color: $grey;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#jury h3 {
+  font-size: 14px;
+}
+
+#jury p.bio {
+  font-size: 14px;
+}
+
+#jury a {
+  color: $action-color;
+
+  &:focus {
+    color: $action-color;
+  }
 }
